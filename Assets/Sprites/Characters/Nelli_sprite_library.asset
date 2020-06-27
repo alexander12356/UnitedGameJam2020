@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Nelli_sprite_library
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Nelli
+    m_Hash: -1846355689
+    m_CategoryList:
+    - m_Name: Nelli_eyes
+      m_Hash: -1380325911
+      m_Sprite: {fileID: -8642218172224052177, guid: 6364bb915de44a04583fca03ce92ae81,
+        type: 3}
+    - m_Name: Nelli_eyes_closed
+      m_Hash: -1886164945
+      m_Sprite: {fileID: -71187678581630304, guid: e4698f16b85b13b4a9d4f5b1a02abb77,
+        type: 3}
+    - m_Name: Nelli_hand1
+      m_Hash: 1045224504
+      m_Sprite: {fileID: -1442998171953202030, guid: 6364bb915de44a04583fca03ce92ae81,
+        type: 3}
+    - m_Name: Nelli_hand_open1
+      m_Hash: -1515516848
+      m_Sprite: {fileID: 528818810984593838, guid: e4698f16b85b13b4a9d4f5b1a02abb77,
+        type: 3}
+    - m_Name: Nelli_hand2
+      m_Hash: -1488614014
+      m_Sprite: {fileID: -8594180261604100217, guid: 6364bb915de44a04583fca03ce92ae81,
+        type: 3}
+    - m_Name: Nelli_hand_open2
+      m_Hash: 1017273834
+      m_Sprite: {fileID: 2995584069206212942, guid: e4698f16b85b13b4a9d4f5b1a02abb77,
+        type: 3}
+    - m_Name: Nelli_mouth
+      m_Hash: 1584763883
+      m_Sprite: {fileID: 4296089576133207260, guid: 6364bb915de44a04583fca03ce92ae81,
+        type: 3}
+    - m_Name: Nelli_mouth2
+      m_Hash: 760475758
+      m_Sprite: {fileID: 8058091725760626680, guid: e4698f16b85b13b4a9d4f5b1a02abb77,
+        type: 3}
