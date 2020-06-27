@@ -11,6 +11,7 @@
             <e p="Actor" t="Include">
               <e p="ActorData.cs" t="Include" />
               <e p="ActorMovement.cs" t="Include" />
+              <e p="AnimationController.cs" t="Include" />
               <e p="IActorData.cs" t="Include" />
               <e p="IAttackController.cs" t="Include" />
               <e p="IMovement.cs" t="Include" />

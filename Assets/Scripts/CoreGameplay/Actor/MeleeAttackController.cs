@@ -13,6 +13,7 @@ namespace BR.Actor
 		private bool _isStartAttack = false;
 		private DamageCommand _damageCommand = null;
 		private MoveDirection _moveDirection = MoveDirection.Left;
+		private AnimationController _animationController = null;
 
 		[SerializeField] private CircleCollider2D _attackCollider2D = null;
 		[SerializeField] private LayerMask _targetMasks = -1;
@@ -21,6 +22,7 @@ namespace BR.Actor
 		{
 			_actorData = GetComponent<ActorData>();
 			_damageCommand = new DamageCommand();
+			_animationController = GetComponent<AnimationController>();
 		}
 
 		public void Attack(DamageType damageType, MoveDirection direction)
@@ -36,6 +38,7 @@ namespace BR.Actor
 			_damageCommand.DamageValue = _actorData.GetMeleeDamageValue(damageType);
 			Invoke(nameof(AttackDelay), _actorData.MeleeAttack1Delay);
 			_moveDirection = direction;
+			_animationController?.Attack();
 		}
 
 		private void AttackDelay()

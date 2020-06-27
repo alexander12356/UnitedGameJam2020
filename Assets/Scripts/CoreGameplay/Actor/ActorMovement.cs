@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+
+using UnityEngine;
 
 using Vector2 = UnityEngine.Vector2;
 
@@ -20,6 +22,7 @@ namespace BR.Actor
 		private Vector2 Force = Vector2.zero;
 		private bool _isCooldown = false;
 		private MoveDirection _moveDirection = MoveDirection.Left;
+		private AnimationController _animationController = null;
 
 		[SerializeField] private float _speed = 0f;
 		[SerializeField] private float _jumpForce = 0f;
@@ -36,6 +39,7 @@ namespace BR.Actor
 		private void Awake()
 		{
 			_rigidbody2d = GetComponentInChildren<Rigidbody2D>();
+			_animationController = GetComponent<AnimationController>();
 		}
 
 		public void Move(float direction)
@@ -53,6 +57,8 @@ namespace BR.Actor
 				_moveDirection = MoveDirection.Left;
 				transform.localScale = new Vector3(-1, 1, 1f);
 			}
+
+			_animationController?.Move(Mathf.Abs(_velocity.x) > 0.01f);
 		}
 
 		public void Jump()
@@ -72,6 +78,11 @@ namespace BR.Actor
 			_isCooldown = true;
 			_velocity = Vector2.zero;;
 			Invoke(nameof(ResetCooldown), _forcedCooldown);
+		}
+
+		private void Update()
+		{
+			_animationController.Jump(!_isGround);
 		}
 
 		private void FixedUpdate()

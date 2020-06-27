@@ -19,6 +19,7 @@ namespace BR
         private IAttackController _attackController = null;
         private RangeAttackController _rangeAttackController = null;
         public ActorData Data => _actorData;
+        private AnimationController _animationController = null;
 
         private void Awake()
         {
@@ -28,10 +29,7 @@ namespace BR
             _actorData = GetComponent<ActorData>();
             _attackController = GetComponent<IAttackController>();
             _rangeAttackController = GetComponent<RangeAttackController>();
-        }
-
-        private void Start()
-        {
+            _animationController = GetComponent<AnimationController>();
         }
 
         public void Move(float value)
@@ -47,11 +45,13 @@ namespace BR
         public void Damage(int value, DamageType damageType)
         {
             _actorData.Damage(value, damageType);
+            _animationController.Hurt();
         }
 
         public void Death()
         {
-            Destroy(gameObject);
+            _animationController.Death();
+            Destroy(gameObject, 2f);
         }
 
         public void AddForce(Vector2 force)
