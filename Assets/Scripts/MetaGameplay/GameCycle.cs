@@ -47,7 +47,48 @@ public class GameCycle : MonoBehaviour
 
 	private void CompleteGame()
 	{
-		SceneManager.LoadScene("GameComplete");
+		var result = 0;
+
+		if (PlayerStats.Instance.MaxHP1 > PlayerStats.Instance.MaxHP2)
+		{
+			result++;
+		}
+		else if (PlayerStats.Instance.MaxHP1 < PlayerStats.Instance.MaxHP2)
+		{
+			result--;
+		}
+		
+		if (PlayerStats.Instance.MeleeAttackValue1 > PlayerStats.Instance.MeleeAttackValue2)
+		{
+			result++;
+		}
+		else if (PlayerStats.Instance.MeleeAttackValue1 < PlayerStats.Instance.MeleeAttackValue2)
+		{
+			result--;
+		}
+
+		if (PlayerStats.Instance.RangeAttackValue1 > PlayerStats.Instance.RangeAttackValue2)
+		{
+			result++;
+		}
+		else if (PlayerStats.Instance.RangeAttackValue1 < PlayerStats.Instance.RangeAttackValue2)
+		{
+			result--;
+		}
+
+		if (result > 0)
+		{
+			SceneManager.LoadScene("GameComplete1");
+		}
+		else if (result < 0)
+		{
+			SceneManager.LoadScene("GameComplete2");
+		}
+		else
+		{
+			SceneManager.LoadScene("GameComplete3");
+		}
+		
 	}
 
 	private void LoadStore()
