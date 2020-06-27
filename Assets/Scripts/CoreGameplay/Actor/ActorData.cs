@@ -15,16 +15,19 @@ namespace BR
 		public int _currentHP1 = 0;
 		public int _currentHP2 = 0;
 
-		public int AttackValue1;
-		public int AttackValue2;
-		public float AttackDelay = 0;
+		public int MeleeAttackValue1;
+		public int MeleeAttackValue2;
+		public int RangeAttackValue1;
+		public int RangeAttackValue2;
+		public float MeleeAttack1Delay = 0;
+		public float MeleeAttack2Delay = 0;
 		public float AttackDistance = 0;
 		public Vector2 DamageForce = Vector2.zero;
 
-		private IActor _actor;
-		public int RangeDamage;
 		public float RangeAttackFrequency = 0f;
 		public int Coins = 0;
+
+		private IActor _actor;
 
 		private void Awake()
 		{
@@ -55,6 +58,32 @@ namespace BR
 		{
 			_currentHP1 = _maxHP1;
 			_currentHP2 = _maxHP2;
+		}
+
+		public int GetMeleeDamageValue(DamageType type)
+		{
+			switch (type)
+			{
+				case DamageType.Type1:
+					return MeleeAttackValue1;
+				case DamageType.Type2:
+					return MeleeAttackValue2;
+			}
+
+			return 0;
+		}
+
+		public int GetRangeDamageValue(DamageType type)
+		{
+			switch (type)
+			{
+				case DamageType.Type1:
+					return RangeAttackValue1;
+				case DamageType.Type2:
+					return RangeAttackValue2;
+			}
+
+			return 0;
 		}
 	}
 }

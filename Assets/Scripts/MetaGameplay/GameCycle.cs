@@ -76,7 +76,7 @@ public class GameCycle : MonoBehaviour
 		var actorData = PlayerActor.Instance.Data;
 		actorData._currentHP1 = PlayerStats.Instance.CurrentHP1;
 		actorData._currentHP2 = PlayerStats.Instance.CurrentHP2;
-		actorData.AttackValue1 = PlayerStats.Instance.CurrentAttackValue1;
-		actorData.AttackValue2 = PlayerStats.Instance.CurrentAttackValue2;
+		actorData.MeleeAttackValue1 = PlayerStats.Instance.MeleeAttackValue1;
+		actorData.MeleeAttackValue2 = PlayerStats.Instance.MeleeAttackValue2;
 	}
 }

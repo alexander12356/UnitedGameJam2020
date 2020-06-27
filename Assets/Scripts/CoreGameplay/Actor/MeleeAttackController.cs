@@ -6,7 +6,7 @@ using Vector2 = UnityEngine.Vector2;
 
 namespace BR.Actor
 {
-	public class PlayerAttackController : MonoBehaviour, IAttackController
+	public class MeleeAttackController : MonoBehaviour, IAttackController
 	{
 		private ActorData _actorData = null;
 		private bool _isAttacking = false;
@@ -33,8 +33,8 @@ namespace BR.Actor
 			_isStartAttack = true;
 			
 			_damageCommand.DamageType = damageType;
-			_damageCommand.DamageValue = _actorData.AttackValue1;
-			Invoke(nameof(AttackDelay), _actorData.AttackDelay);
+			_damageCommand.DamageValue = _actorData.GetMeleeDamageValue(damageType);
+			Invoke(nameof(AttackDelay), _actorData.MeleeAttack1Delay);
 			_moveDirection = direction;
 		}
 

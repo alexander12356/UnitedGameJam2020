@@ -414,8 +414,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentHP1: 10
   CurrentHP2: 10
-  CurrentAttackValue1: 2
-  CurrentAttackValue2: 2
+  MeleeAttackValue1: 2
+  MeleeAttackValue2: 2
+  RangeAttackValue1: 4
+  RangeAttackValue2: 4
   MaxHP1: 10
   MaxHP2: 10
   Coins: 0

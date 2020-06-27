@@ -33,7 +33,7 @@ namespace Actor
 			var projectile = Instantiate(ProjectilePrefab, spawn.position, Quaternion.identity);
 			projectile.MoveDirection = direction;
 			projectile.DamageType = damageType;
-			projectile.DamageValue = _actorData.RangeDamage;
+			projectile.DamageValue = _actorData.GetRangeDamageValue(damageType);
 			projectile.TargetTag = targetTag;
 		}
 

@@ -33,14 +33,30 @@ namespace BR
 
             if (Input.GetMouseButtonDown(0))
             {
-                ((AttackCommand) _attackCommand).DamageType = DamageType.Type1;
-                _attackCommand.Execute(_actor);
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    _rangeAttackCommand.damageType = DamageType.Type1;
+                    _rangeAttackCommand.Execute(_actor);
+                }
+                else
+                {
+                    ((AttackCommand) _attackCommand).DamageType = DamageType.Type1;
+                    _attackCommand.Execute(_actor);
+                }
             }
 
-            if (Input.GetKey(KeyCode.LeftShift) && Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(1))
             {
-                _rangeAttackCommand.damageType = DamageType.Type1;
-                _rangeAttackCommand.Execute(_actor);
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    _rangeAttackCommand.damageType = DamageType.Type2;
+                    _rangeAttackCommand.Execute(_actor);
+                }
+                else
+                {
+                    ((AttackCommand) _attackCommand).DamageType = DamageType.Type2;
+                    _attackCommand.Execute(_actor);
+                }
             }
         }
     }

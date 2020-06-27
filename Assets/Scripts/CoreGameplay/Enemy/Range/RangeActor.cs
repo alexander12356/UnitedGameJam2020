@@ -40,7 +40,7 @@ public class RangeActor : MonoBehaviour, IActor
 
     public void Damage(int value, DamageType type)
     {
-        _data.Damage(value, DamageType.Type1);
+        _data.Damage(value, type);
 
         if (_movement.Direction == MoveDirection.Left)
         {

@@ -82,6 +82,10 @@ namespace BR
         {
             PlayerStats.Instance.CurrentHP1 = _actorData._currentHP1;
             PlayerStats.Instance.CurrentHP2 = _actorData._currentHP2;
+            PlayerStats.Instance.MeleeAttackValue1 = _actorData.MeleeAttackValue1;
+            PlayerStats.Instance.MeleeAttackValue2 = _actorData.MeleeAttackValue2;
+            PlayerStats.Instance.RangeAttackValue1 = _actorData.RangeAttackValue1;
+            PlayerStats.Instance.RangeAttackValue2 = _actorData.RangeAttackValue2;
             PlayerStats.Instance.Coins = _actorData.Coins;
         }
     }

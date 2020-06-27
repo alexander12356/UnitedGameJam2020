@@ -8,8 +8,10 @@ namespace MetaGameplay
 
 		public int CurrentHP1;
 		public int CurrentHP2;
-		public int CurrentAttackValue1;
-		public int CurrentAttackValue2;
+		public int MeleeAttackValue1;
+		public int MeleeAttackValue2;
+		public int RangeAttackValue1;
+		public int RangeAttackValue2;
 		public int MaxHP1;
 		public int MaxHP2;
 		public int Coins;

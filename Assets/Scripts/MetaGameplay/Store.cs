@@ -48,7 +48,7 @@ public class Store : MonoBehaviour
             return;
         }
 
-        PlayerStats.Instance.CurrentAttackValue1 += _addAttack1Value;
+        PlayerStats.Instance.MeleeAttackValue1 += _addAttack1Value;
         PlayerStats.Instance.Coins -= _attack1Price;
     }
 
@@ -59,7 +59,7 @@ public class Store : MonoBehaviour
             return;
         }
        
-        PlayerStats.Instance.CurrentAttackValue2 += _addAttack2Value;
+        PlayerStats.Instance.MeleeAttackValue2 += _addAttack2Value;
         PlayerStats.Instance.Coins -= _attack2Price;
     }
 }

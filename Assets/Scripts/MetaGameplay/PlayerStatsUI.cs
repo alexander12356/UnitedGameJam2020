@@ -35,7 +35,7 @@ public class PlayerStatsUI : MonoBehaviour
         _hp1Bar.fillAmount = (float) PlayerStats.Instance.CurrentHP1 / PlayerStats.Instance.MaxHP1;
         _hp2Bar.fillAmount = (float) PlayerStats.Instance.CurrentHP2 / PlayerStats.Instance.MaxHP2;
         _coinsText.text = $"Coins: {PlayerStats.Instance.Coins}";
-        _attack1Text.text = $"Attack1: {PlayerStats.Instance.CurrentAttackValue1}";
-        _attack2Text.text = $"Attack2: {PlayerStats.Instance.CurrentAttackValue2}";
+        _attack1Text.text = $"Attack1: {PlayerStats.Instance.MeleeAttackValue1}";
+        _attack2Text.text = $"Attack2: {PlayerStats.Instance.MeleeAttackValue2}";
     }
 }
