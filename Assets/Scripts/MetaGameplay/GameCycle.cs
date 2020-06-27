@@ -2,6 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using BR;
+
+using MetaGameplay;
+
 using TMPro;
 
 using UnityEngine;
@@ -18,6 +22,8 @@ public class GameCycle : MonoBehaviour
 	{
 		Instance = this;
 		DontDestroyOnLoad(gameObject);
+
+		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
 	public void StartGame()
@@ -57,5 +63,20 @@ public class GameCycle : MonoBehaviour
 	private void LoadLevel()
 	{
 		SceneManager.LoadScene($"Level{_currentLevel}");
+
+	}
+	
+	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+	{
+		if (!scene.name.Contains("Level"))
+		{
+			return;
+		}
+
+		var actorData = PlayerActor.Instance.Data;
+		actorData._currentHP1 = PlayerStats.Instance.CurrentHP1;
+		actorData._currentHP2 = PlayerStats.Instance.CurrentHP2;
+		actorData.AttackValue1 = PlayerStats.Instance.CurrentAttackValue1;
+		actorData.AttackValue2 = PlayerStats.Instance.CurrentAttackValue2;
 	}
 }

@@ -18,6 +18,7 @@ namespace BR
         private ActorData _actorData = null;
         private IAttackController _attackController = null;
         private RangeAttackController _rangeAttackController = null;
+        public ActorData Data => _actorData;
 
         private void Awake()
         {
@@ -31,10 +32,6 @@ namespace BR
 
         private void Start()
         {
-            _actorData._currentHP1 = PlayerStats.Instance.CurrentHP1;
-            _actorData._currentHP2 = PlayerStats.Instance.CurrentHP2;
-            _actorData.AttackValue1 = PlayerStats.Instance.CurrentAttackValue1;
-            _actorData.AttackValue2 = PlayerStats.Instance.CurrentAttackValue2;
         }
 
         public void Move(float value)
