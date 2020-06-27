@@ -18,6 +18,8 @@ public class PlayerStatsUI : MonoBehaviour
     [SerializeField] private Image _hp2Bar;
     [SerializeField] private TMP_Text _attack1Text = null;
     [SerializeField] private TMP_Text _attack2Text = null;
+    [SerializeField] private TMP_Text _rangeAttack1Text = null;
+    [SerializeField] private TMP_Text _rangeAttack2Text = null;
 
     private void Awake()
     {
@@ -35,7 +37,9 @@ public class PlayerStatsUI : MonoBehaviour
         _hp1Bar.fillAmount = (float) PlayerStats.Instance.CurrentHP1 / PlayerStats.Instance.MaxHP1;
         _hp2Bar.fillAmount = (float) PlayerStats.Instance.CurrentHP2 / PlayerStats.Instance.MaxHP2;
         _coinsText.text = $"Coins: {PlayerStats.Instance.Coins}";
-        _attack1Text.text = $"Attack1: {PlayerStats.Instance.MeleeAttackValue1}";
-        _attack2Text.text = $"Attack2: {PlayerStats.Instance.MeleeAttackValue2}";
+        _attack1Text.text = $"Melee physic attack: {PlayerStats.Instance.MeleeAttackValue1}";
+        _attack2Text.text = $"Melee specter attack: {PlayerStats.Instance.MeleeAttackValue2}";
+        _rangeAttack1Text.text = $"Range physic attack: {PlayerStats.Instance.RangeAttackValue1}";
+        _rangeAttack2Text.text = $"Range specter attack: {PlayerStats.Instance.RangeAttackValue2}";
     }
 }

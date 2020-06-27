@@ -76,7 +76,11 @@ public class GameCycle : MonoBehaviour
 		var actorData = PlayerActor.Instance.Data;
 		actorData._currentHP1 = PlayerStats.Instance.CurrentHP1;
 		actorData._currentHP2 = PlayerStats.Instance.CurrentHP2;
+		actorData._maxHP1 = PlayerStats.Instance.MaxHP1;
+		actorData._maxHP2 = PlayerStats.Instance.MaxHP2;
 		actorData.MeleeAttackValue1 = PlayerStats.Instance.MeleeAttackValue1;
 		actorData.MeleeAttackValue2 = PlayerStats.Instance.MeleeAttackValue2;
+		actorData.RangeAttackValue1 = PlayerStats.Instance.RangeAttackValue1;
+		actorData.RangeAttackValue2 = PlayerStats.Instance.RangeAttackValue2;
 	}
 }
