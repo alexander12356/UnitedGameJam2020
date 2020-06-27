@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 
 using MetaGameplay;
 
@@ -29,7 +28,7 @@ public class Store : MonoBehaviour
 
     public void Heal1()
     {
-        if (PlayerStats.Instance.Coins < _heal1Price)
+        if (PlayerStats.Instance.Coins < _heal1Price || PlayerStats.Instance.CurrentHP1 == PlayerStats.Instance.MaxHP1)
         {
             return;
         }
@@ -40,7 +39,7 @@ public class Store : MonoBehaviour
     
     public void Heal2()
     {
-        if (PlayerStats.Instance.Coins < _heal2Price)
+        if (PlayerStats.Instance.Coins < _heal2Price || PlayerStats.Instance.CurrentHP2 == PlayerStats.Instance.MaxHP2)
         {
             return;
         }
@@ -77,8 +76,13 @@ public class Store : MonoBehaviour
         {
             return;
         }
+
+        var currentHp = PlayerStats.Instance.CurrentHP1;
+        var maxHP = PlayerStats.Instance.MaxHP1;
+        var percent = Convert.ToInt32((currentHp * 100) / (float)maxHP);
        
         PlayerStats.Instance.MaxHP1 += _addMaxHP1;
+        PlayerStats.Instance.CurrentHP1 = Convert.ToInt32(PlayerStats.Instance.MaxHP1 * percent / 100f);
         PlayerStats.Instance.Coins -= _maxHP1Price;
     }
  
@@ -88,8 +92,13 @@ public class Store : MonoBehaviour
         {
             return;
         }
+
+        var currentHp = PlayerStats.Instance.CurrentHP2;
+        var maxHP = PlayerStats.Instance.MaxHP2;
+        var percent = Convert.ToInt32((currentHp * 100) / (float)maxHP);
        
         PlayerStats.Instance.MaxHP2 += _addMaxHP2;
+        PlayerStats.Instance.CurrentHP2 = Convert.ToInt32(PlayerStats.Instance.MaxHP2 * percent / 100f);
         PlayerStats.Instance.Coins -= _maxHP2Price;
     }
 
