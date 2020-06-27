@@ -82,7 +82,7 @@ namespace BR.Actor
 
 		private void Update()
 		{
-			_animationController.Jump(!_isGround);
+			_animationController?.Jump(!_isGround);
 		}
 
 		private void FixedUpdate()

@@ -45,12 +45,12 @@ namespace BR
         public void Damage(int value, DamageType damageType)
         {
             _actorData.Damage(value, damageType);
-            _animationController.Hurt();
+            _animationController?.Hurt();
         }
 
         public void Death()
         {
-            _animationController.Death();
+            _animationController?.Death();
             Destroy(gameObject, 2f);
         }
 
