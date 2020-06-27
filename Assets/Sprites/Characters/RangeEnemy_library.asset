@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: RangeEnemy_library
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Shottenemy
+    m_Hash: -353316147
+    m_CategoryList:
+    - m_Name: head1
+      m_Hash: 2059584302
+      m_Sprite: {fileID: -5390732412583960581, guid: 582139ec940bf3b4ca951bba1c025307,
+        type: 3}
+    - m_Name: head2
+      m_Hash: -473197932
+      m_Sprite: {fileID: -922750122685034381, guid: ec962957021fb4147b4cf61f643ea796,
+        type: 3}
+    - m_Name: head3
+      m_Hash: -1798528510
+      m_Sprite: {fileID: -3996151664861837205, guid: 7dea0e3550aa0094d9d5dcb2ac3ac1b4,
+        type: 3}
+    - m_Name: Leg1_1
+      m_Hash: 1999606325
+      m_Sprite: {fileID: -2107285363044306391, guid: 582139ec940bf3b4ca951bba1c025307,
+        type: 3}
+    - m_Name: Leg1_2
+      m_Hash: -299449457
+      m_Sprite: {fileID: 6405098486512971051, guid: ec962957021fb4147b4cf61f643ea796,
+        type: 3}
+    - m_Name: Leg1_3
+      m_Hash: -1725828327
+      m_Sprite: {fileID: -2067376511502377459, guid: 7dea0e3550aa0094d9d5dcb2ac3ac1b4,
+        type: 3}
+    - m_Name: Leg2_1
+      m_Hash: 1969826924
+      m_Sprite: {fileID: -2374050393492600045, guid: 582139ec940bf3b4ca951bba1c025307,
+        type: 3}
+    - m_Name: Leg2_2
+      m_Hash: -329220650
+      m_Sprite: {fileID: 8002151742918238225, guid: ec962957021fb4147b4cf61f643ea796,
+        type: 3}
+    - m_Name: Leg2_3
+      m_Hash: -1687728832
+      m_Sprite: {fileID: -8803656903334355872, guid: 7dea0e3550aa0094d9d5dcb2ac3ac1b4,
+        type: 3}
+    - m_Name: Arm1_1
+      m_Hash: 1993091613
+      m_Sprite: {fileID: -3613557119671007278, guid: 582139ec940bf3b4ca951bba1c025307,
+        type: 3}
+    - m_Name: Arm1_2
+      m_Hash: -272270425
+      m_Sprite: {fileID: 8182299922321043827, guid: ec962957021fb4147b4cf61f643ea796,
+        type: 3}
+    - m_Name: Arm1_3
+      m_Hash: -1732097231
+      m_Sprite: {fileID: -5116472513216961917, guid: 7dea0e3550aa0094d9d5dcb2ac3ac1b4,
+        type: 3}
+    - m_Name: Arm2_1
+      m_Hash: 1955238980
+      m_Sprite: {fileID: 4041208793891903452, guid: 582139ec940bf3b4ca951bba1c025307,
+        type: 3}
+    - m_Name: Arm2_2
+      m_Hash: -310131202
+      m_Sprite: {fileID: -5149515993164777602, guid: ec962957021fb4147b4cf61f643ea796,
+        type: 3}
+    - m_Name: Arm2_3
+      m_Hash: -1702562456
+      m_Sprite: {fileID: -523707970911553287, guid: 7dea0e3550aa0094d9d5dcb2ac3ac1b4,
+        type: 3}
+    - m_Name: Bod1
+      m_Hash: 60648750
+      m_Sprite: {fileID: 8758686300926004214, guid: 582139ec940bf3b4ca951bba1c025307,
+        type: 3}
+    - m_Name: Bod2
+      m_Hash: -1701561196
+      m_Sprite: {fileID: -3119995473237918124, guid: ec962957021fb4147b4cf61f643ea796,
+        type: 3}
+    - m_Name: Bod3
+      m_Hash: -309130238
+      m_Sprite: {fileID: 8884562633296019944, guid: 7dea0e3550aa0094d9d5dcb2ac3ac1b4,
+        type: 3}
