@@ -28,4 +28,9 @@ public class AnimationController : MonoBehaviour
 	{
 		_animationController.SetTrigger("Death");
 	}
+
+	public void RangeAttack()
+	{
+		_animationController.SetTrigger("RangeAttack");
+	}
 }

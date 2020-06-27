@@ -1,4 +1,6 @@
-﻿using BR;
+﻿using System;
+
+using BR;
 using BR.Actor;
 using BR.Projectile;
 
@@ -18,6 +20,8 @@ namespace Actor
 		public Projectile ProjectilePrefab;
 
 		[SerializeField] private Transform spawn = null;
+		[SerializeField] private AnimationController _animationController1 = null;
+		[SerializeField] private AnimationController _animationController2 = null;
 
 		private void Awake()
 		{
@@ -37,6 +41,16 @@ namespace Actor
 			_energyCommand.Execute(_actor);
 
 			_canAttack = false;
+
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					_animationController1?.RangeAttack();
+					break;
+				case DamageType.Type2:
+					_animationController2?.RangeAttack();
+					break;
+			}
 			Invoke(nameof(ResetCanAttack), _actorData.RangeAttackFrequency);
 			
 			var projectile = Instantiate(ProjectilePrefab, spawn.position, Quaternion.identity);
