@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 using MetaGameplay;
@@ -15,6 +16,16 @@ public class PlayerStatsUI : MonoBehaviour
     [SerializeField] private TMP_Text _coinsText = null;
     [SerializeField] private Image _hp1Bar;
     [SerializeField] private Image _hp2Bar;
+    [SerializeField] private TMP_Text _attack1Text = null;
+    [SerializeField] private TMP_Text _attack2Text = null;
+
+    private void Awake()
+    {
+        if (PlayerStats.Instance == null)
+        {
+            new GameObject().AddComponent<PlayerStats>();
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,5 +35,7 @@ public class PlayerStatsUI : MonoBehaviour
         _hp1Bar.fillAmount = (float) PlayerStats.Instance.CurrentHP1 / PlayerStats.Instance.MaxHP1;
         _hp2Bar.fillAmount = (float) PlayerStats.Instance.CurrentHP2 / PlayerStats.Instance.MaxHP2;
         _coinsText.text = $"Coins: {PlayerStats.Instance.Coins}";
+        _attack1Text.text = $"Attack1: {PlayerStats.Instance.CurrentAttackValue1}";
+        _attack2Text.text = $"Attack2: {PlayerStats.Instance.CurrentAttackValue2}";
     }
 }
