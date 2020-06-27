@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: MeleEnemy_library
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: New Category
+    m_Hash: -1887952825
+    m_CategoryList:
+    - m_Name: Meleenemy_bod1
+      m_Hash: -41974988
+      m_Sprite: {fileID: 2576308081255863214, guid: c9fa8a2c4aeb3b6499c4a563ecef07f9,
+        type: 3}
+    - m_Name: Meleenemy_bod2
+      m_Hash: 1685508750
+      m_Sprite: {fileID: -8851250510312154083, guid: cf7fa16c58c54ed4e83d4e1ffa864988,
+        type: 3}
+    - m_Name: Meleenemy_bod3
+      m_Hash: 326230552
+      m_Sprite: {fileID: 164868164273676130, guid: dd9e8e94a2c4e4d4b854b1f0e9182119,
+        type: 3}
+    - m_Name: Meleenemy_leg1
+      m_Hash: 991568402
+      m_Sprite: {fileID: 6765309542161618637, guid: c9fa8a2c4aeb3b6499c4a563ecef07f9,
+        type: 3}
+    - m_Name: Meleenemy_leg2
+      m_Hash: -1575783512
+      m_Sprite: {fileID: 1064115945434703511, guid: cf7fa16c58c54ed4e83d4e1ffa864988,
+        type: 3}
+    - m_Name: Meleenemy_leg3
+      m_Hash: -720092354
+      m_Sprite: {fileID: 7486845763826476798, guid: dd9e8e94a2c4e4d4b854b1f0e9182119,
+        type: 3}
+    - m_Name: Meleenemy_leg2_1
+      m_Hash: -2097748182
+      m_Sprite: {fileID: 9119778191711136447, guid: c9fa8a2c4aeb3b6499c4a563ecef07f9,
+        type: 3}
+    - m_Name: Meleenemy_leg2_2
+      m_Hash: 469743248
+      m_Sprite: {fileID: -3426682845668541841, guid: cf7fa16c58c54ed4e83d4e1ffa864988,
+        type: 3}
+    - m_Name: Meleenemy_leg2_3
+      m_Hash: 1828226566
+      m_Sprite: {fileID: 8107556397228910491, guid: dd9e8e94a2c4e4d4b854b1f0e9182119,
+        type: 3}
+    - m_Name: Meleenemy_hed1
+      m_Hash: -1621760378
+      m_Sprite: {fileID: 7456826523845286460, guid: c9fa8a2c4aeb3b6499c4a563ecef07f9,
+        type: 3}
+    - m_Name: Meleenemy_hed2
+      m_Hash: 106739516
+      m_Sprite: {fileID: -6785169390063960735, guid: cf7fa16c58c54ed4e83d4e1ffa864988,
+        type: 3}
+    - m_Name: Meleenemy_hed3
+      m_Hash: 1901823914
+      m_Sprite: {fileID: 3584530072732460042, guid: dd9e8e94a2c4e4d4b854b1f0e9182119,
+        type: 3}
