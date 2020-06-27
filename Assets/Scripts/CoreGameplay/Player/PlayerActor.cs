@@ -58,6 +58,16 @@ namespace BR
                     _animationController2?.Hurt();
                     break;
             }
+
+            if (_movement.Direction == MoveDirection.Left)
+            {
+                AddForce(new Vector2(_actorData.DamageForce.x, _actorData.DamageForce.y));
+            }
+
+            if (_movement.Direction == MoveDirection.Right)
+            {
+                AddForce(new Vector2(-_actorData.DamageForce.x, _actorData.DamageForce.y));
+            }
         }
 
         public void Death()

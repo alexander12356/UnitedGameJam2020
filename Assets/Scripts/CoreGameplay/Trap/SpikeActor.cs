@@ -31,13 +31,13 @@ public class SpikeActor : MonoBehaviour
         var actor = other.GetComponent<IActor>();
         _damageCommand.Execute(actor);
 
-        if (actor.GetPosition().x > transform.position.x)
-        {
-            actor.AddForce(DamageForce);
-        }
-        else
-        {
-            actor.AddForce(new Vector2(-DamageForce.x, DamageForce.y));
-        }
+        //if (actor.GetPosition().x > transform.position.x)
+        //{
+        //    actor.AddForce(DamageForce);
+        //}
+        //else
+        //{
+        //    actor.AddForce(new Vector2(-DamageForce.x, DamageForce.y));
+        //}
     }
 }
