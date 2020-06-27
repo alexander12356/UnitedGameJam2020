@@ -64,6 +64,7 @@
             <e p="PlayerStats.cs" t="Include" />
             <e p="PlayerStatsUI.cs" t="Include" />
             <e p="Store.cs" t="Include" />
+            <e p="StoreUI.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

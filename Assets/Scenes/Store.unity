@@ -879,7 +879,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2 coins
+  m_text: 5 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4 coins
+  m_text: 5 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3095,7 +3095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4 coins
+  m_text: 5 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3481,7 +3481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2 coins
+  m_text: 5 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3637,7 +3637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4 coins
+  m_text: 5 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5341,6 +5341,7 @@ GameObject:
   - component: {fileID: 1830550628}
   - component: {fileID: 1830550627}
   - component: {fileID: 1830550631}
+  - component: {fileID: 1830550632}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5473,6 +5474,35 @@ MonoBehaviour:
   _rangeAttack2Price: 4
   _addRangeAttack1Value: 1
   _addRangeAttack2Value: 1
+  BasePrice: 5
+  Heal1Stage: 1
+  Heal2Stage: 1
+  Melee1AttackStage: 1
+  Melee2AttackStage: 1
+  Range1AttackStage: 1
+  Range2AttackStage: 1
+  MaxHP1Stage: 1
+  MaxHP2Stage: 1
+--- !u!114 &1830550632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830550626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ab97e8384f3ed4cb935cfb522f5689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heal1Price: {fileID: 200895366}
+  _heal2Price: {fileID: 1185151622}
+  _maxHP1Price: {fileID: 482717349}
+  _maxHP2Price: {fileID: 230001508}
+  _meleeAttack1Price: {fileID: 369637720}
+  _meleeAttack2Price: {fileID: 989965153}
+  _rangeAttack1Price: {fileID: 1224106771}
+  _rangeAttack2Price: {fileID: 318530667}
 --- !u!1 &1974134494
 GameObject:
   m_ObjectHideFlags: 0

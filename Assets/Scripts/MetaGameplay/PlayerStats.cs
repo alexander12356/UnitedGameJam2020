@@ -15,6 +15,14 @@ namespace MetaGameplay
 		public int MaxHP1;
 		public int MaxHP2;
 		public int Coins;
+		public int HealStage1 = 1;
+		public int HealStage2 = 1;
+		public int MaxHPStage1 = 1;
+		public int MaxHPStage2 = 1;
+		public int MeleeAttackStage1 = 1;
+		public int MeleeAttackStage2 = 1;
+		public int RangeAttackStage1 = 1;
+		public int RangeAttackStage2 = 1;
 
 		private void Awake()
 		{
