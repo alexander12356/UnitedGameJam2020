@@ -82,6 +82,7 @@ namespace BR
         {
             PlayerStats.Instance.CurrentHP1 = _actorData._currentHP1;
             PlayerStats.Instance.CurrentHP2 = _actorData._currentHP2;
+            PlayerStats.Instance.Coins = _actorData.Coins;
         }
     }
 }

@@ -13,6 +13,7 @@ public class MeleeActor : MonoBehaviour, IActor
     private MeleeData _data;
     private IAttackController _attackController;
     private IMovement _movement;
+    [SerializeField] private Coin _coinPrefab = null;
     
     private void Awake()
     {
@@ -52,6 +53,7 @@ public class MeleeActor : MonoBehaviour, IActor
 
     public void Death()
     {
+        Instantiate(_coinPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 

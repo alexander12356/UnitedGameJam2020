@@ -184,12 +184,14 @@ MonoBehaviour:
   _maxHP2: 1
   _currentHP1: 0
   _currentHP2: 0
-  AttackValue: 2
+  AttackValue1: 0
+  AttackValue2: 0
   AttackDelay: 1
   AttackDistance: 2
   DamageForce: {x: 100, y: 100}
   RangeDamage: 3
   RangeAttackFrequency: 0.5
+  Coins: 0
   _canAttackDistance: 6
   AttackType: 0
   DefenseType: 0
@@ -205,6 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67b768ca31ac43342b53f3a188666eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinPrefab: {fileID: 5377959801446893263, guid: d420362f69aa4a84e9b7b2df0260a4e5,
+    type: 3}
 --- !u!114 &3741786365647927548
 MonoBehaviour:
   m_ObjectHideFlags: 0

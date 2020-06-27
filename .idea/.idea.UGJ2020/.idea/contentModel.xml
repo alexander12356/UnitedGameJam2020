@@ -17,6 +17,7 @@
               <e p="PlayerAttackController.cs" t="Include" />
               <e p="RangeAttackController.cs" t="Include" />
             </e>
+            <e p="Coin.cs" t="Include" />
             <e p="CommandPattern" t="Include">
               <e p="Command.cs" t="Include" />
               <e p="IActor.cs" t="Include" />

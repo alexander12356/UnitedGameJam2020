@@ -15,6 +15,7 @@ public class RangeActor : MonoBehaviour, IActor
     private MeleeData _data;
     private RangeAttackController _attackController;
     private IMovement _movement;
+    [SerializeField] private Coin _coinPrefab = null;
     
     private void Awake()
     {
@@ -54,6 +55,7 @@ public class RangeActor : MonoBehaviour, IActor
 
     public void Death()
     {
+        Instantiate(_coinPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
