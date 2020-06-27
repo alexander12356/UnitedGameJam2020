@@ -263,6 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DamageValue: 1
   DamageType: 0
+  DamageForce: {x: 300, y: 300}
 --- !u!1 &703996221
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795944146424025262, guid: a8363ce9e4ef38a48b5d0f223a0371d9,
+        type: 3}
+      propertyPath: _forcedCooldown
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6795944146424025263, guid: a8363ce9e4ef38a48b5d0f223a0371d9,
         type: 3}

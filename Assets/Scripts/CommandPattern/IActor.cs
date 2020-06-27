@@ -1,5 +1,7 @@
 ﻿using BR;
 
+using UnityEngine;
+
 namespace CommandPattern
 {
 	public interface IActor
@@ -8,5 +10,7 @@ namespace CommandPattern
 		void Jump();
 		void Damage(int value, DamageType type);
 		void Death();
+		void AddForce(Vector2 force);
+		Vector2 GetPosition();
 	}
 }

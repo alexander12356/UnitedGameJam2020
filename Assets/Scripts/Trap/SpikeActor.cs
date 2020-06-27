@@ -14,6 +14,7 @@ public class SpikeActor : MonoBehaviour
 
     public int DamageValue = 0;
     public DamageType DamageType = 0;
+    public Vector2 DamageForce = Vector2.zero;
     
     void Awake()
     {
@@ -29,5 +30,14 @@ public class SpikeActor : MonoBehaviour
 
         var actor = other.GetComponent<IActor>();
         _damageCommand.Execute(actor);
+
+        if (actor.GetPosition().x > transform.position.x)
+        {
+            actor.AddForce(DamageForce);
+        }
+        else
+        {
+            actor.AddForce(new Vector2(-DamageForce.x, DamageForce.y));
+        }
     }
 }

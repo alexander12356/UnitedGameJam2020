@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Numerics;
+
+using UnityEngine;
+
+using Vector2 = UnityEngine.Vector2;
 
 namespace BR.Actor
 {
@@ -8,11 +12,15 @@ namespace BR.Actor
 		private Vector2 _velocity = Vector2.zero;
 		private bool _isJump = false;
 		private bool _isGround = false;
+		private bool _isForced = false;
+		private Vector2 Force = Vector2.zero;
+		private bool _isCooldown = false;
 
 		[SerializeField] private float _speed = 0f;
 		[SerializeField] private float _jumpForce = 0f;
 		[SerializeField] private CircleCollider2D _checkGroundCollider2D = null;
 		[SerializeField] private LayerMask _groundMask = -1;
+		[SerializeField] private float _forcedCooldown = 0;
 		
 		private void Awake()
 		{
@@ -26,15 +34,46 @@ namespace BR.Actor
 
 		public void Jump()
 		{
+			if (_isCooldown)
+			{
+				return;
+			}
+
 			_isJump = true;
+		}
+
+		public void AddForce(Vector2 force)
+		{
+			_isForced = true;
+			Force = force;
+			_isCooldown = true;
+			_velocity = Vector2.zero;;
+			Invoke(nameof(ResetCooldown), _forcedCooldown);
 		}
 
 		private void FixedUpdate()
 		{
 			_isGround = Physics2D.OverlapCircle(_checkGroundCollider2D.transform.position, _checkGroundCollider2D.radius, _groundMask);
-			_rigidbody2d.velocity = _velocity;
+
+			if (!_isCooldown)
+			{
+				_rigidbody2d.velocity = _velocity;
+			}
 
 			JumpPhysicCalculate();
+			ForcePhysicCalculate();
+		}
+
+		private void ForcePhysicCalculate()
+		{
+			if (!_isForced)
+			{
+				return;
+			}
+
+			_isForced = false;
+
+			_rigidbody2d.AddForce(Force, ForceMode2D.Force);
 		}
 
 		private void JumpPhysicCalculate()
@@ -53,6 +92,11 @@ namespace BR.Actor
 
 			_rigidbody2d.velocity = new Vector2(_rigidbody2d.velocity.x, 0.0f);
 			_rigidbody2d.AddForce(Vector2.up * _jumpForce, ForceMode2D.Force);
+		}
+
+		private void ResetCooldown()
+		{
+			_isCooldown = false;
 		}
 	}
 }

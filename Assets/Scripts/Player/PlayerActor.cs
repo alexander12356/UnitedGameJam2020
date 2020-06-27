@@ -43,5 +43,15 @@ namespace BR
         {
             Destroy(gameObject);
         }
+
+        public void AddForce(Vector2 force)
+        {
+            _movement.AddForce(force);
+        }
+
+        public Vector2 GetPosition()
+        {
+            return transform.position;
+        }
     }
 }
