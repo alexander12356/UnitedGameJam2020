@@ -28,7 +28,7 @@ public class GameCycle : MonoBehaviour
 
 	public void StartGame()
 	{
-		LoadLevel();
+		LoadLevel(0);
 	}
 
 	public void LevelComplete()
@@ -96,15 +96,21 @@ public class GameCycle : MonoBehaviour
 		SceneManager.LoadScene("Store");
 	}
 
-	public void CloseStore()
+	public void CloseStore(int type)
 	{
-		LoadLevel();
+		LoadLevel(type);
 	}
 
-	private void LoadLevel()
+	private void LoadLevel(int type)
 	{
-		SceneManager.LoadScene($"Level{_currentLevel}");
-
+		if (type == 0)
+		{
+			SceneManager.LoadScene($"Level{_currentLevel}p");
+		}
+		else
+		{
+			SceneManager.LoadScene($"Level{_currentLevel}s");
+		}
 	}
 	
 	private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

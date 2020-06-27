@@ -21,9 +21,14 @@ public class Store : MonoBehaviour
     public int _addRangeAttack1Value = 0;
     public int _addRangeAttack2Value = 0;
     
-    public void CloseStore()
+    public void GoPhysicWorld()
     {
-        GameCycle.Instance.CloseStore();
+        GameCycle.Instance.CloseStore(0);
+    }
+
+    public void GoSpecterWorld()
+    {
+        GameCycle.Instance.CloseStore(1);
     }
 
     public void Heal1()
