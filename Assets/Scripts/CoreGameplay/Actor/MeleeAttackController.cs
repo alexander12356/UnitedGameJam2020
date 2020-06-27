@@ -1,4 +1,6 @@
-﻿using CommandPattern;
+﻿using System;
+
+using CommandPattern;
 
 using UnityEngine;
 
@@ -13,8 +15,9 @@ namespace BR.Actor
 		private bool _isStartAttack = false;
 		private DamageCommand _damageCommand = null;
 		private MoveDirection _moveDirection = MoveDirection.Left;
-		private AnimationController _animationController = null;
-
+		
+		[SerializeField] private AnimationController _animationController1 = null;
+		[SerializeField] private AnimationController _animationController2 = null;
 		[SerializeField] private CircleCollider2D _attackCollider2D = null;
 		[SerializeField] private LayerMask _targetMasks = -1;
 		
@@ -22,7 +25,6 @@ namespace BR.Actor
 		{
 			_actorData = GetComponent<ActorData>();
 			_damageCommand = new DamageCommand();
-			_animationController = GetComponent<AnimationController>();
 		}
 
 		public void Attack(DamageType damageType, MoveDirection direction)
@@ -38,7 +40,16 @@ namespace BR.Actor
 			_damageCommand.DamageValue = _actorData.GetMeleeDamageValue(damageType);
 			Invoke(nameof(AttackDelay), _actorData.MeleeAttack1Delay);
 			_moveDirection = direction;
-			_animationController?.Attack();
+
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					_animationController1?.Attack();
+					break;
+				case DamageType.Type2:
+					_animationController2?.Attack();
+					break;
+			}
 		}
 
 		private void AttackDelay()

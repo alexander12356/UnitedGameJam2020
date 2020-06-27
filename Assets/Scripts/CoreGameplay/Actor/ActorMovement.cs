@@ -22,8 +22,9 @@ namespace BR.Actor
 		private Vector2 Force = Vector2.zero;
 		private bool _isCooldown = false;
 		private MoveDirection _moveDirection = MoveDirection.Left;
-		private AnimationController _animationController = null;
-
+		
+		[SerializeField] private AnimationController _animationController1 = null;
+		[SerializeField] private AnimationController _animationController2 = null;
 		[SerializeField] private float _speed = 0f;
 		[SerializeField] private float _jumpForce = 0f;
 		[SerializeField] private CircleCollider2D _checkGroundCollider2D = null;
@@ -39,7 +40,6 @@ namespace BR.Actor
 		private void Awake()
 		{
 			_rigidbody2d = GetComponentInChildren<Rigidbody2D>();
-			_animationController = GetComponent<AnimationController>();
 		}
 
 		public void Move(float direction)
@@ -58,7 +58,8 @@ namespace BR.Actor
 				transform.localScale = new Vector3(-1, 1, 1f);
 			}
 
-			_animationController?.Move(Mathf.Abs(_velocity.x) > 0.01f);
+			_animationController1?.Move(Mathf.Abs(_velocity.x) > 0.01f);
+			_animationController2?.Move(Mathf.Abs(_velocity.x) > 0.01f);
 		}
 
 		public void Jump()
@@ -82,7 +83,8 @@ namespace BR.Actor
 
 		private void Update()
 		{
-			_animationController?.Jump(!_isGround);
+			_animationController1?.Jump(!_isGround);
+			_animationController2?.Jump(!_isGround);
 		}
 
 		private void FixedUpdate()

@@ -1,4 +1,6 @@
-﻿using Actor;
+﻿using System;
+
+using Actor;
 
 using BR.Actor;
 
@@ -19,7 +21,9 @@ namespace BR
         private IAttackController _attackController = null;
         private RangeAttackController _rangeAttackController = null;
         public ActorData Data => _actorData;
-        private AnimationController _animationController = null;
+        
+        [SerializeField] private AnimationController _animationController1 = null;
+        [SerializeField] private AnimationController _animationController2 = null;
 
         private void Awake()
         {
@@ -29,7 +33,6 @@ namespace BR
             _actorData = GetComponent<ActorData>();
             _attackController = GetComponent<IAttackController>();
             _rangeAttackController = GetComponent<RangeAttackController>();
-            _animationController = GetComponent<AnimationController>();
         }
 
         public void Move(float value)
@@ -45,12 +48,22 @@ namespace BR
         public void Damage(int value, DamageType damageType)
         {
             _actorData.Damage(value, damageType);
-            _animationController?.Hurt();
+
+            switch (damageType)
+            {
+                case DamageType.Type1:
+                    _animationController1?.Hurt();
+                    break;
+                case DamageType.Type2:
+                    _animationController2?.Hurt();
+                    break;
+            }
         }
 
         public void Death()
         {
-            _animationController?.Death();
+            _animationController1?.Death();
+            _animationController2?.Death();
             Destroy(gameObject, 2f);
         }
 
