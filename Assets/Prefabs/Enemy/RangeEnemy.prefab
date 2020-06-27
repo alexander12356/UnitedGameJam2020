@@ -134,6 +134,8 @@ MonoBehaviour:
     type: 3}
   _poofPrefab: {fileID: 7266610084235730159, guid: 99e9651797d9b744cb10e668b5c763bf,
     type: 3}
+  _animationController1: {fileID: 566982440401884895}
+  _animationController2: {fileID: 566982440401884895}
 --- !u!114 &3741786365647927548
 MonoBehaviour:
   m_ObjectHideFlags: 0

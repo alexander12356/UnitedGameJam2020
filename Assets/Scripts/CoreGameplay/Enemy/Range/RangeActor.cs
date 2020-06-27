@@ -17,6 +17,8 @@ public class RangeActor : MonoBehaviour, IActor
     private IMovement _movement;
     [SerializeField] private Coin _coinPrefab = null;
     [SerializeField] private GameObject _poofPrefab = null;
+    [SerializeField] private AnimationController _animationController1;
+    [SerializeField] private AnimationController _animationController2;
     
     private void Awake()
     {
@@ -51,6 +53,16 @@ public class RangeActor : MonoBehaviour, IActor
         if (_movement.Direction == MoveDirection.Right)
         {
             AddForce(new Vector2(-_data.DamageForce.x, _data.DamageForce.y));
+        }
+        
+        switch (type)
+        {
+            case DamageType.Type1:
+                _animationController1?.Hurt();
+                break;
+            case DamageType.Type2:
+                _animationController2?.Hurt();
+                break;
         }
     }
 
