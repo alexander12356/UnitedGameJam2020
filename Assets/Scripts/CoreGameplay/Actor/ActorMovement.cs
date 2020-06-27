@@ -35,6 +35,15 @@ namespace BR.Actor
 		public void LookAt(MoveDirection direction)
 		{
 			_moveDirection = direction;
+
+			if (direction == MoveDirection.Left)
+			{
+				transform.localScale = new Vector3(-1f, 1f, 1f);
+			}
+			else
+			{
+				transform.localScale = Vector3.one;
+			}
 		}
 
 		private void Awake()
