@@ -100,5 +100,15 @@ namespace BR
 
 			return 0;
 		}
+
+		public bool IsDeath()
+		{
+			if (_currentHP1 <= 0 || _currentHP2 <= 0)
+			{
+				return true;
+			}
+
+			return false;
+		}
 	}
 }

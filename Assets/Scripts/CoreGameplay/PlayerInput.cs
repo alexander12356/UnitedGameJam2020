@@ -1,4 +1,6 @@
-﻿using CommandPattern;
+﻿using BR.Actor;
+
+using CommandPattern;
 
 using UnityEngine;
 
@@ -11,10 +13,12 @@ namespace BR
         private ICommand _jumpCommand = null;
         private ICommand _attackCommand = null;
         private RangeAttackCommand _rangeAttackCommand = null;
+        private ActorData _actorData = null;
         
         private void Awake()
         {
             _actor = GetComponent<IActor>();
+            _actorData = GetComponent<ActorData>();
             _moveCommand = new MoveCommand();
             _jumpCommand = new JumpCommand();
             _attackCommand = new AttackCommand();
@@ -23,6 +27,13 @@ namespace BR
 
         private void Update()
         {
+            if (_actorData.IsDeath())
+            {
+                _moveCommand.HorizontalAxis = 0f;
+                _moveCommand.Execute(_actor);
+                return;
+            }
+            
             _moveCommand.HorizontalAxis = Input.GetAxis("Horizontal");
             _moveCommand.Execute(_actor);
 
