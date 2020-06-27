@@ -60,6 +60,8 @@ MonoBehaviour:
   MeleeAttackValue2: 0
   RangeAttackValue1: 0
   RangeAttackValue2: 0
+  RangeEnergyValue1: 0
+  RangeEnergyValue2: 0
   MeleeAttack1Delay: 1
   MeleeAttack2Delay: 0
   AttackDistance: 2
@@ -82,6 +84,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinPrefab: {fileID: 5377959801446893263, guid: d420362f69aa4a84e9b7b2df0260a4e5,
+    type: 3}
+  _poofPrefab: {fileID: 7266610084235730159, guid: 99e9651797d9b744cb10e668b5c763bf,
     type: 3}
 --- !u!114 &4267435615071992038
 MonoBehaviour:
@@ -107,6 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc3b1e85fe84c70a11e3b2430ec3e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationController1: {fileID: 0}
+  _animationController2: {fileID: 0}
   _attackCollider2D: {fileID: 9077695329931171057}
   _targetMasks:
     serializedVersion: 2
@@ -123,6 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11dee44dd44a4679ae0ea3fe78072365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animationController1: {fileID: 0}
+  _animationController2: {fileID: 0}
   _speed: 0
   _jumpForce: 0
   _checkGroundCollider2D: {fileID: 2710460812127585780}

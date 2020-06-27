@@ -16,6 +16,7 @@
               <e p="IAttackController.cs" t="Include" />
               <e p="IMovement.cs" t="Include" />
               <e p="MeleeAttackController.cs" t="Include" />
+              <e p="Poof.cs" t="Include" />
               <e p="RangeAttackController.cs" t="Include" />
             </e>
             <e p="Coin.cs" t="Include" />
