@@ -5,6 +5,7 @@ namespace MetaGameplay
 	public class PlayerStats : MonoBehaviour
 	{
 		public static PlayerStats Instance = null;
+
 		public int CurrentHP1;
 		public int CurrentHP2;
 		public int CurrentAttackValue1;

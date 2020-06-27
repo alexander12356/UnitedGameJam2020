@@ -47,6 +47,7 @@
               <e p="PlayerActor.cs" t="Include" />
             </e>
             <e p="PlayerInput.cs" t="Include" />
+            <e p="PlayerStatsUI.cs" t="Include" />
             <e p="Projectile" t="Include">
               <e p="Projectile.cs" t="Include" />
             </e>

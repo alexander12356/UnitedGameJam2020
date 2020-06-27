@@ -262,15 +262,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHP1: 10
   _maxHP2: 10
-  _currentHP1: 0
-  _currentHP2: 0
-  AttackValue1: 0
-  AttackValue2: 0
+  _currentHP1: 10
+  _currentHP2: 10
+  AttackValue1: 2
+  AttackValue2: 2
   AttackDelay: 0.5
   AttackDistance: 2
   DamageForce: {x: 0, y: 0}
   RangeDamage: 3
   RangeAttackFrequency: 1
+  Coins: 0
 --- !u!114 &6795944146424025248
 MonoBehaviour:
   m_ObjectHideFlags: 0

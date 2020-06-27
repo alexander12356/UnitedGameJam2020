@@ -10,8 +10,8 @@ namespace BR
 {
 	public class ActorData : MonoBehaviour, IActorData
 	{
-		[SerializeField] private int _maxHP1 = 0;
-		[SerializeField] private int _maxHP2 = 0;
+		public int _maxHP1 = 0;
+		public int _maxHP2 = 0;
 		public int _currentHP1 = 0;
 		public int _currentHP2 = 0;
 
@@ -24,6 +24,7 @@ namespace BR
 		private IActor _actor;
 		public int RangeDamage;
 		public float RangeAttackFrequency = 0f;
+		public int Coins = 0;
 
 		private void Awake()
 		{
