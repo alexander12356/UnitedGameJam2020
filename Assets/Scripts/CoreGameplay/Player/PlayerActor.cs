@@ -4,6 +4,8 @@ using BR.Actor;
 
 using CommandPattern;
 
+using MetaGameplay;
+
 using UnityEngine;
 
 namespace BR
@@ -29,7 +31,10 @@ namespace BR
 
         private void Start()
         {
-            _actorData.ResetData();
+            _actorData._currentHP1 = PlayerStats.Instance.CurrentHP1;
+            _actorData._currentHP2 = PlayerStats.Instance.CurrentHP2;
+            _actorData.AttackValue1 = PlayerStats.Instance.CurrentAttackValue1;
+            _actorData.AttackValue2 = PlayerStats.Instance.CurrentAttackValue2;
         }
 
         public void Move(float value)
@@ -74,6 +79,12 @@ namespace BR
         public void RangeAttack(DamageType damageType)
         {
             _rangeAttackController.Attack(damageType, _movement.Direction, "Enemy");
+        }
+
+        public void SaveCurrentStats()
+        {
+            PlayerStats.Instance.CurrentHP1 = _actorData._currentHP1;
+            PlayerStats.Instance.CurrentHP2 = _actorData._currentHP2;
         }
     }
 }

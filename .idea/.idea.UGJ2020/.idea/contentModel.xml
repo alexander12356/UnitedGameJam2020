@@ -57,6 +57,7 @@
           <e p="MetaGameplay" t="Include">
             <e p="GameCycle.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
+            <e p="PlayerStats.cs" t="Include" />
             <e p="Store.cs" t="Include" />
           </e>
         </e>

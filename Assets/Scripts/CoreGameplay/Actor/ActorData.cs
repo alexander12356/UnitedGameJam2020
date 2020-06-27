@@ -15,7 +15,8 @@ namespace BR
 		public int _currentHP1 = 0;
 		public int _currentHP2 = 0;
 
-		public int AttackValue;
+		public int AttackValue1;
+		public int AttackValue2;
 		public float AttackDelay = 0;
 		public float AttackDistance = 0;
 		public Vector2 DamageForce = Vector2.zero;

@@ -33,7 +33,7 @@ namespace BR.Actor
 			_isStartAttack = true;
 			
 			_damageCommand.DamageType = damageType;
-			_damageCommand.DamageValue = _actorData.AttackValue;
+			_damageCommand.DamageValue = _actorData.AttackValue1;
 			Invoke(nameof(AttackDelay), _actorData.AttackDelay);
 			_moveDirection = direction;
 		}
