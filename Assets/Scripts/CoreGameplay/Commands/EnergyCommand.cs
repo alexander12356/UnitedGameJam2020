@@ -4,11 +4,11 @@ namespace BR
 {
 	public class EnergyCommand : Command
 	{
-		public DamageType damageType = 0;
+		public DamageType DamageType = 0;
 
 		public override void Execute(IActor actor)
 		{
-			actor.GetEnergy(damageType);
+			actor.GetEnergy(DamageType);
 		}
 
 		public override void Undo(IActor actor)
