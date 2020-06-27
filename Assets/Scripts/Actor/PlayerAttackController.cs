@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-using CommandPattern;
+﻿using CommandPattern;
 
 using UnityEngine;
 
@@ -13,6 +11,7 @@ namespace BR.Actor
 		private ActorData _actorData = null;
 		private bool _isAttacking = false;
 		private DamageCommand _damageCommand = null;
+		private MoveDirection _moveDirection = MoveDirection.Left;
 
 		[SerializeField] private CircleCollider2D _attackCollider2D = null;
 		[SerializeField] private LayerMask _targetMasks = -1;
@@ -23,11 +22,17 @@ namespace BR.Actor
 			_damageCommand = new DamageCommand();
 		}
 
-		public void Attack(DamageType damageType)
+		public void Attack(DamageType damageType, MoveDirection direction)
 		{
+			if (_isAttacking)
+			{
+				return;
+			}
+			
 			_damageCommand.DamageType = damageType;
 			_damageCommand.DamageValue = _actorData.AttackValue;
 			Invoke(nameof(AttackDelay), _actorData.AttackDelay);
+			_moveDirection = direction;
 		}
 
 		private void AttackDelay()
@@ -45,10 +50,12 @@ namespace BR.Actor
 			_isAttacking = false;
 			var position = _attackCollider2D.transform.position;
 
-			var hit = Physics2D.CircleCast(position, _attackCollider2D.radius, Vector2.right, _actorData.AttackDistance, _targetMasks);
-			
+			var direction = _moveDirection == MoveDirection.Left ? Vector2.left : Vector2.right;
+
+			var hit = Physics2D.CircleCast(position, _attackCollider2D.radius, direction, _actorData.AttackDistance, _targetMasks);
+
 			var start = new Vector2(position.x, position.y);
-			var end = start + Vector2.right * _actorData.AttackDistance;
+			var end = start + direction * _actorData.AttackDistance;
 				
 			Debug.DrawLine(start, end, Color.red, 1);
 

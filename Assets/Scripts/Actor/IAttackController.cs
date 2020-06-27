@@ -1,7 +1,9 @@
-﻿namespace BR.Actor
+﻿using UnityEngine.UI;
+
+namespace BR.Actor
 {
 	public interface IAttackController
 	{
-		void Attack(DamageType damageType);
+		void Attack(DamageType damageType, MoveDirection direction);
 	}
 }

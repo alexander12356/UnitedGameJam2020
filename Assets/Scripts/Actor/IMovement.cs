@@ -7,5 +7,6 @@ namespace BR.Actor
 		void Move(float direction);
 		void Jump();
 		void AddForce(Vector2 force);
+		MoveDirection Direction { get; }
 	}
 }

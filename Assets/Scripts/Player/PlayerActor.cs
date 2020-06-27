@@ -56,7 +56,7 @@ namespace BR
 
         public void Attack(DamageType damageType)
         {
-            _attackController.Attack(damageType);
+            _attackController.Attack(damageType, _movement.Direction);
         }
     }
 }
