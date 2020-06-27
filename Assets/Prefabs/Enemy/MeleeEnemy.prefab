@@ -56,12 +56,14 @@ MonoBehaviour:
   _maxHP2: 1
   _currentHP1: 0
   _currentHP2: 0
-  AttackValue1: 0
-  AttackValue2: 0
-  AttackDelay: 1
+  MeleeAttackValue1: 1
+  MeleeAttackValue2: 0
+  RangeAttackValue1: 0
+  RangeAttackValue2: 0
+  MeleeAttack1Delay: 1
+  MeleeAttack2Delay: 0
   AttackDistance: 2
   DamageForce: {x: 100, y: 100}
-  RangeDamage: 0
   RangeAttackFrequency: 0
   Coins: 0
   _canAttackDistance: 3
