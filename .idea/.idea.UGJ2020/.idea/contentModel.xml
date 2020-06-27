@@ -8,8 +8,12 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Actor" t="Include">
+            <e p="ActorData.cs" t="Include" />
             <e p="ActorMovement.cs" t="Include" />
+            <e p="IActorData.cs" t="Include" />
+            <e p="IAttackController.cs" t="Include" />
             <e p="IMovement.cs" t="Include" />
+            <e p="PlayerAttackController.cs" t="Include" />
           </e>
           <e p="CommandPattern" t="Include">
             <e p="Command.cs" t="Include" />
@@ -17,13 +21,16 @@
             <e p="ICommand.cs" t="Include" />
           </e>
           <e p="Commands" t="Include">
+            <e p="AttackCommand.cs" t="Include" />
             <e p="DamageCommand.cs" t="Include" />
             <e p="JumpCommand.cs" t="Include" />
             <e p="MoveCommand.cs" t="Include" />
           </e>
+          <e p="Enemy" t="Include">
+            <e p="DoorActor.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerActor.cs" t="Include" />
-            <e p="PlayerData.cs" t="Include" />
           </e>
           <e p="PlayerInput.cs" t="Include" />
           <e p="Trap" t="Include">

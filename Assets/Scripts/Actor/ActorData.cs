@@ -1,17 +1,23 @@
 ﻿using System;
 
+using BR.Actor;
+
 using CommandPattern;
 
 using UnityEngine;
 
 namespace BR
 {
-	public class PlayerData : MonoBehaviour
+	public class ActorData : MonoBehaviour, IActorData
 	{
 		[SerializeField] private int _maxHP1 = 0;
 		[SerializeField] private int _maxHP2 = 0;
 		public int _currentHP1 = 0;
 		public int _currentHP2 = 0;
+
+		public int AttackValue;
+		public float AttackDelay = 0;
+		public float AttackDistance = 0;
 
 		private IActor _actor;
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-using BR.Actor;
+﻿using BR.Actor;
 
 using CommandPattern;
 
@@ -11,17 +9,19 @@ namespace BR
     public class PlayerActor : MonoBehaviour, IActor
     {
         private IMovement _movement = null;
-        private PlayerData _playerData = null;
+        private ActorData _actorData = null;
+        private IAttackController _attackController = null;
 
         private void Awake()
         {
             _movement = GetComponent<IMovement>();
-            _playerData = GetComponent<PlayerData>();
+            _actorData = GetComponent<ActorData>();
+            _attackController = GetComponent<IAttackController>();
         }
 
         private void Start()
         {
-            _playerData.ResetData();
+            _actorData.ResetData();
         }
 
         public void Move(float value)
@@ -36,7 +36,7 @@ namespace BR
 
         public void Damage(int value, DamageType damageType)
         {
-            _playerData.Damage(value, damageType);
+            _actorData.Damage(value, damageType);
         }
 
         public void Death()
@@ -52,6 +52,11 @@ namespace BR
         public Vector2 GetPosition()
         {
             return transform.position;
+        }
+
+        public void Attack(DamageType damageType)
+        {
+            _attackController.Attack(damageType);
         }
     }
 }

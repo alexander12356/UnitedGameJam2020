@@ -12,5 +12,6 @@ namespace CommandPattern
 		void Death();
 		void AddForce(Vector2 force);
 		Vector2 GetPosition();
+		void Attack(DamageType damageType);
 	}
 }
