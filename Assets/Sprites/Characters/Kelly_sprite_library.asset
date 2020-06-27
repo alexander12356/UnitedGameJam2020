@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: Kelly_sprite_library
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Kelly
+    m_Hash: 1151682051
+    m_CategoryList:
+    - m_Name: eyes
+      m_Hash: -1491454826
+      m_Sprite: {fileID: -797906755409611879, guid: 0adc4e326e0c7ff4292bcb326e5880bb,
+        type: 3}
+    - m_Name: eyeswide
+      m_Hash: -281693370
+      m_Sprite: {fileID: 21300000, guid: 5db472cea413275408418d7ea3d66a10, type: 3}
+    - m_Name: eyesclosed
+      m_Hash: 2026527458
+      m_Sprite: {fileID: 21300000, guid: c6f9819c370c7684aa5bd4bff1be5b84, type: 3}
