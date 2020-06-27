@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Neligard
+    uniqueID: 912227711
+    locked: 0
+  - name: Kellimor
+    uniqueID: 41139
+    locked: 0
