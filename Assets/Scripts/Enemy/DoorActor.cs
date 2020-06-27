@@ -53,4 +53,8 @@ public class DoorActor : MonoBehaviour, IActor
     public void LookAt(MoveDirection direction)
     {
     }
+
+    public void RangeAttack(DamageType damageType)
+    {
+    }
 }

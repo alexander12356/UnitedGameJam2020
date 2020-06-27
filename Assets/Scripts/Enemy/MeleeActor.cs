@@ -74,4 +74,8 @@ public class MeleeActor : MonoBehaviour, IActor
     {
         _movement.LookAt(direction);
     }
+
+    public void RangeAttack(DamageType damageType)
+    {
+    }
 }

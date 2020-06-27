@@ -21,6 +21,7 @@ namespace BR
 		public Vector2 DamageForce = Vector2.zero;
 
 		private IActor _actor;
+		public int RangeDamage; 
 
 		private void Awake()
 		{

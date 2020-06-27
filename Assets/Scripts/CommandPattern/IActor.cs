@@ -15,5 +15,6 @@ namespace CommandPattern
 		Vector2 GetPosition();
 		void Attack(DamageType damageType);
 		void LookAt(MoveDirection direction);
+		void RangeAttack(DamageType damageType);
 	}
 }

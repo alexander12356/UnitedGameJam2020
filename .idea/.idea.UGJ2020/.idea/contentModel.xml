@@ -14,6 +14,7 @@
             <e p="IAttackController.cs" t="Include" />
             <e p="IMovement.cs" t="Include" />
             <e p="PlayerAttackController.cs" t="Include" />
+            <e p="RangeAttackController.cs" t="Include" />
           </e>
           <e p="CommandPattern" t="Include">
             <e p="Command.cs" t="Include" />
@@ -26,6 +27,7 @@
             <e p="JumpCommand.cs" t="Include" />
             <e p="LookCommand.cs" t="Include" />
             <e p="MoveCommand.cs" t="Include" />
+            <e p="RangeAttackCommand.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="DoorActor.cs" t="Include" />
@@ -37,6 +39,9 @@
             <e p="PlayerActor.cs" t="Include" />
           </e>
           <e p="PlayerInput.cs" t="Include" />
+          <e p="Projectile" t="Include">
+            <e p="Projectile.cs" t="Include" />
+          </e>
           <e p="Trap" t="Include">
             <e p="SpikeActor.cs" t="Include" />
           </e>

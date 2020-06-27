@@ -1,4 +1,6 @@
-﻿using BR.Actor;
+﻿using Actor;
+
+using BR.Actor;
 
 using CommandPattern;
 
@@ -13,6 +15,7 @@ namespace BR
         private IMovement _movement = null;
         private ActorData _actorData = null;
         private IAttackController _attackController = null;
+        private RangeAttackController _rangeAttackController = null;
 
         private void Awake()
         {
@@ -21,6 +24,7 @@ namespace BR
             _movement = GetComponent<IMovement>();
             _actorData = GetComponent<ActorData>();
             _attackController = GetComponent<IAttackController>();
+            _rangeAttackController = GetComponent<RangeAttackController>();
         }
 
         private void Start()
@@ -65,6 +69,11 @@ namespace BR
 
         public void LookAt(MoveDirection direction)
         {
+        }
+
+        public void RangeAttack(DamageType damageType)
+        {
+            _rangeAttackController.Attack(damageType, _movement.Direction, "Enemy");
         }
     }
 }
