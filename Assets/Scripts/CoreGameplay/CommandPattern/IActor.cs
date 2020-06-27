@@ -16,5 +16,6 @@ namespace CommandPattern
 		void Attack(DamageType damageType);
 		void LookAt(MoveDirection direction);
 		void RangeAttack(DamageType damageType);
+		void GetEnergy(DamageType type);
 	}
 }

@@ -19,6 +19,8 @@ namespace BR
 		public int MeleeAttackValue2;
 		public int RangeAttackValue1;
 		public int RangeAttackValue2;
+		public int RangeEnergyValue1;
+		public int RangeEnergyValue2;
 		public float MeleeAttack1Delay = 0;
 		public float MeleeAttack2Delay = 0;
 		public float AttackDistance = 0;
@@ -81,6 +83,19 @@ namespace BR
 					return RangeAttackValue1;
 				case DamageType.Type2:
 					return RangeAttackValue2;
+			}
+
+			return 0;
+		}
+
+		public int GetEnergy(DamageType damageType)
+		{
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					return RangeEnergyValue2;
+				case DamageType.Type2:
+					return RangeEnergyValue1;
 			}
 
 			return 0;

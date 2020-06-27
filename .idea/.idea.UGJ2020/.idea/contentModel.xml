@@ -26,6 +26,7 @@
             <e p="Commands" t="Include">
               <e p="AttackCommand.cs" t="Include" />
               <e p="DamageCommand.cs" t="Include" />
+              <e p="EnergyCommand.cs" t="Include" />
               <e p="JumpCommand.cs" t="Include" />
               <e p="LookCommand.cs" t="Include" />
               <e p="MoveCommand.cs" t="Include" />

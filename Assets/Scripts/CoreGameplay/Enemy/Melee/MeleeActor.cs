@@ -80,4 +80,8 @@ public class MeleeActor : MonoBehaviour, IActor
     public void RangeAttack(DamageType damageType)
     {
     }
+
+    public void GetEnergy(DamageType type)
+    {
+    }
 }

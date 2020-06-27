@@ -78,6 +78,11 @@ namespace BR
             _rangeAttackController.Attack(damageType, _movement.Direction, "Enemy");
         }
 
+        public void GetEnergy(DamageType type)
+        {
+            _actorData.Damage(_actorData.GetEnergy(type), type);
+        }
+
         public void SaveCurrentStats()
         {
             PlayerStats.Instance.CurrentHP1 = _actorData._currentHP1;

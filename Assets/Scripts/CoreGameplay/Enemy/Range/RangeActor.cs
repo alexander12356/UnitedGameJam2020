@@ -82,4 +82,8 @@ public class RangeActor : MonoBehaviour, IActor
     {
         _attackController.Attack(damageType, _movement.Direction, "Player");
     }
+
+    public void GetEnergy(DamageType type)
+    {
+    }
 }
