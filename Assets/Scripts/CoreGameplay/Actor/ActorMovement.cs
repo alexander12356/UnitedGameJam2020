@@ -45,11 +45,13 @@ namespace BR.Actor
 			if (_velocity.x > 0f)
 			{
 				_moveDirection = MoveDirection.Right;
+				transform.localScale = Vector3.one;
 			}
 
 			if (_velocity.x < 0)
 			{
 				_moveDirection = MoveDirection.Left;
+				transform.localScale = new Vector3(-1, 1, 1f);
 			}
 		}
 
