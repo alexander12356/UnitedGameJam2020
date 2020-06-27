@@ -10,6 +10,7 @@ namespace BR.Actor
 	{
 		private ActorData _actorData = null;
 		private bool _isAttacking = false;
+		private bool _isStartAttack = false;
 		private DamageCommand _damageCommand = null;
 		private MoveDirection _moveDirection = MoveDirection.Left;
 
@@ -24,10 +25,12 @@ namespace BR.Actor
 
 		public void Attack(DamageType damageType, MoveDirection direction)
 		{
-			if (_isAttacking)
+			if (_isStartAttack)
 			{
 				return;
 			}
+
+			_isStartAttack = true;
 			
 			_damageCommand.DamageType = damageType;
 			_damageCommand.DamageValue = _actorData.AttackValue;
@@ -48,6 +51,7 @@ namespace BR.Actor
 			}
 
 			_isAttacking = false;
+			_isStartAttack = false;
 			var position = _attackCollider2D.transform.position;
 
 			var direction = _moveDirection == MoveDirection.Left ? Vector2.left : Vector2.right;
@@ -62,6 +66,7 @@ namespace BR.Actor
 			if (hit.collider != null)
 			{
 				_damageCommand.Execute(hit.collider.GetComponent<IActor>());
+				Debug.Log("Attack");
 			}
 		}
 	}

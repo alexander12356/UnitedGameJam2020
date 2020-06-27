@@ -1,4 +1,5 @@
 ﻿using BR;
+using BR.Actor;
 
 using UnityEngine;
 
@@ -13,5 +14,6 @@ namespace CommandPattern
 		void AddForce(Vector2 force);
 		Vector2 GetPosition();
 		void Attack(DamageType damageType);
+		void LookAt(MoveDirection direction);
 	}
 }

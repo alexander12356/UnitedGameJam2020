@@ -8,5 +8,6 @@ namespace BR.Actor
 		void Jump();
 		void AddForce(Vector2 force);
 		MoveDirection Direction { get; }
+		void LookAt(MoveDirection direction);
 	}
 }

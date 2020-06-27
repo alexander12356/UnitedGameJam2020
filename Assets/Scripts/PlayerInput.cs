@@ -9,7 +9,7 @@ namespace BR
     public class PlayerInput : MonoBehaviour
     {
         private IActor _actor = null;
-        private ICommand _moveCommand = null;
+        private MoveCommand _moveCommand = null;
         private ICommand _jumpCommand = null;
         private ICommand _attackCommand = null;
         
@@ -23,6 +23,7 @@ namespace BR
 
         private void Update()
         {
+            _moveCommand.HorizontalAxis = Input.GetAxis("Horizontal");
             _moveCommand.Execute(_actor);
 
             if (Input.GetKeyDown(KeyCode.Space))

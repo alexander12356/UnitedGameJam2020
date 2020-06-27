@@ -28,6 +28,10 @@ namespace BR.Actor
 		[SerializeField] private float _forcedCooldown = 0;
 
 		public MoveDirection Direction => _moveDirection;
+		public void LookAt(MoveDirection direction)
+		{
+			_moveDirection = direction;
+		}
 
 		private void Awake()
 		{

@@ -6,9 +6,10 @@ namespace BR
 {
 	public class MoveCommand : Command
 	{
+		public float HorizontalAxis = 0f;
 		public override void Execute(IActor actor)
 		{
-			actor.Move(Input.GetAxis("Horizontal"));
+			actor.Move(HorizontalAxis);
 		}
 
 		public override void Undo(IActor actor)

@@ -8,12 +8,16 @@ namespace BR
 {
     public class PlayerActor : MonoBehaviour, IActor
     {
+        public static PlayerActor Instance = null;
+        
         private IMovement _movement = null;
         private ActorData _actorData = null;
         private IAttackController _attackController = null;
 
         private void Awake()
         {
+            Instance = this;
+            
             _movement = GetComponent<IMovement>();
             _actorData = GetComponent<ActorData>();
             _attackController = GetComponent<IAttackController>();
@@ -57,6 +61,10 @@ namespace BR
         public void Attack(DamageType damageType)
         {
             _attackController.Attack(damageType, _movement.Direction);
+        }
+
+        public void LookAt(MoveDirection direction)
+        {
         }
     }
 }

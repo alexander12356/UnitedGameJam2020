@@ -24,10 +24,14 @@
             <e p="AttackCommand.cs" t="Include" />
             <e p="DamageCommand.cs" t="Include" />
             <e p="JumpCommand.cs" t="Include" />
+            <e p="LookCommand.cs" t="Include" />
             <e p="MoveCommand.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="DoorActor.cs" t="Include" />
+            <e p="MeleeActor.cs" t="Include" />
+            <e p="MeleeAI.cs" t="Include" />
+            <e p="MeleeData.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerActor.cs" t="Include" />

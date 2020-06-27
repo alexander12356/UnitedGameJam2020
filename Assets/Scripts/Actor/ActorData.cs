@@ -18,6 +18,7 @@ namespace BR
 		public int AttackValue;
 		public float AttackDelay = 0;
 		public float AttackDistance = 0;
+		public Vector2 DamageForce = Vector2.zero;
 
 		private IActor _actor;
 
@@ -26,7 +27,7 @@ namespace BR
 			_actor = GetComponent<IActor>();
 		}
 
-		public void Damage(int value, DamageType damageType)
+		public virtual void Damage(int value, DamageType damageType)
 		{
 			switch (damageType)
 			{
