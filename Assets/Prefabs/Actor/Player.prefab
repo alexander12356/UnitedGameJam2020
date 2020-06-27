@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 115357170438485540}
   m_Layer: 10
   m_Name: GroundCheckCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 6586759359015228624}
   m_Layer: 10
   m_Name: AttackCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 7110421201644866379}
   m_Layer: 10
   m_Name: ProjectileSpawner
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 6795944145619166559}
   m_Layer: 10
   m_Name: Renderer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,6 +269,7 @@ MonoBehaviour:
   AttackDistance: 2
   DamageForce: {x: 0, y: 0}
   RangeDamage: 3
+  RangeAttackFrequency: 1
 --- !u!114 &6795944146424025248
 MonoBehaviour:
   m_ObjectHideFlags: 0

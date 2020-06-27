@@ -31,9 +31,15 @@
           </e>
           <e p="Enemy" t="Include">
             <e p="DoorActor.cs" t="Include" />
-            <e p="MeleeActor.cs" t="Include" />
-            <e p="MeleeAI.cs" t="Include" />
-            <e p="MeleeData.cs" t="Include" />
+            <e p="Melee" t="Include">
+              <e p="MeleeActor.cs" t="Include" />
+              <e p="MeleeAI.cs" t="Include" />
+              <e p="MeleeData.cs" t="Include" />
+            </e>
+            <e p="Range" t="Include">
+              <e p="RangeActor.cs" t="Include" />
+              <e p="RangeAI.cs" t="Include" />
+            </e>
           </e>
           <e p="Player" t="Include">
             <e p="PlayerActor.cs" t="Include" />

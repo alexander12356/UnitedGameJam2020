@@ -21,7 +21,8 @@ namespace BR
 		public Vector2 DamageForce = Vector2.zero;
 
 		private IActor _actor;
-		public int RangeDamage; 
+		public int RangeDamage;
+		public float RangeAttackFrequency = 0f;
 
 		private void Awake()
 		{
