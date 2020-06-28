@@ -20,4 +20,9 @@ public class MainMenu : MonoBehaviour
     {
         GameCycle.Instance.StartGame();
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

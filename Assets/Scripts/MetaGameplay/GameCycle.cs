@@ -28,7 +28,7 @@ public class GameCycle : MonoBehaviour
 
 	private void Start()
 	{
-		LoadMainMenu();
+		SceneManager.LoadScene("Main");
 	}
 
 	public void StartGame()
@@ -141,8 +141,23 @@ public class GameCycle : MonoBehaviour
 		Invoke(nameof(LoadMainMenu), 3f);
 	}
 
+	public void LoadFirstTime()
+	{
+	}
+
 	private void LoadMainMenu()
 	{
+		_currentLevel = 1;
 		SceneManager.LoadScene("Main");
+
+		PlayerStats.Instance.CurrentHP1 = 10;
+		PlayerStats.Instance.CurrentHP2 = 10;
+		PlayerStats.Instance.MaxHP1 = 10;
+		PlayerStats.Instance.MaxHP2 = 10;
+		PlayerStats.Instance.MeleeAttackValue1 = 2;
+		PlayerStats.Instance.MeleeAttackValue2 = 2;
+		PlayerStats.Instance.RangeAttackValue1 = 4;
+		PlayerStats.Instance.RangeAttackValue2 = 4;
+		PlayerStats.Instance.Coins = 0;
 	}
 }
