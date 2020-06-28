@@ -47,6 +47,7 @@
               </e>
             </e>
             <e p="LevelComplete.cs" t="Include" />
+            <e p="Parallax.cs" t="Include" />
             <e p="Player" t="Include">
               <e p="PlayerActor.cs" t="Include" />
             </e>
