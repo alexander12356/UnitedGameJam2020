@@ -62,9 +62,13 @@ MonoBehaviour:
   RangeAttackValue2: 0
   RangeEnergyValue1: 0
   RangeEnergyValue2: 0
-  MeleeAttack1Delay: 1
+  MeleeAttack1Delay: 0.7
   MeleeAttack2Delay: 0
-  AttackDistance: 2
+  MeleeAttackDuration1: 1
+  MeleeAttackDuration2: 0
+  MeleeAttackAnimationSpeed1: 1
+  MeleeAttackAnimationSpeed2: 0
+  AttackDistance: 3
   DamageForce: {x: 100, y: 100}
   RangeAttackFrequency: 0
   Coins: 0

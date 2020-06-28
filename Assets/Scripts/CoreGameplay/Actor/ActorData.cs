@@ -15,18 +15,32 @@ namespace BR
 		public int _currentHP1 = 0;
 		public int _currentHP2 = 0;
 
+		[Space]
 		public int MeleeAttackValue1;
 		public int MeleeAttackValue2;
-		public int RangeAttackValue1;
-		public int RangeAttackValue2;
-		public int RangeEnergyValue1;
-		public int RangeEnergyValue2;
 		public float MeleeAttack1Delay = 0;
 		public float MeleeAttack2Delay = 0;
+		public float MeleeAttackDuration1 = 0;
+		public float MeleeAttackDuration2 = 0;
+		public float MeleeAttackAnimationSpeed1 = 0;
+		public float MeleeAttackAnimationSpeed2 = 0;
+		
+		[Space]
+		public int RangeAttackValue1;
+		public int RangeAttackValue2;
+		public float RangePreAttackTime1 = 0;
+		public float RangePreAttackTime2 = 0;
+		public float RangeAttackAnimationSpeed1 = 0;
+		public float RangeAttackAnimationSpeed2 = 0;
+		public float RangeAttackFrequency = 0f;
+		
+		[Space]
+		public int RangeEnergyValue1;
+		public int RangeEnergyValue2;
+		
+		[Space]
 		public float AttackDistance = 0;
 		public Vector2 DamageForce = Vector2.zero;
-
-		public float RangeAttackFrequency = 0f;
 		public int Coins = 0;
 
 		private IActor _actor;
@@ -100,6 +114,32 @@ namespace BR
 
 			return 0;
 		}
+		
+		public float GetMeleeAttackDuration(DamageType damageType)
+		{
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					return MeleeAttackDuration1;
+				case DamageType.Type2:
+					return MeleeAttackDuration2;
+			}
+
+			return 0;
+		}
+
+		public float GetMeleeAttackAnimationSpeed(DamageType damageType)
+		{
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					return MeleeAttackAnimationSpeed1;
+				case DamageType.Type2:
+					return MeleeAttackAnimationSpeed2;
+			}
+
+			return 0;
+		}
 
 		public bool IsDeath()
 		{
@@ -109,6 +149,32 @@ namespace BR
 			}
 
 			return false;
+		}
+
+		public float GetRangePreAttackTime(DamageType damageType)
+		{
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					return RangePreAttackTime1;
+				case DamageType.Type2:
+					return RangePreAttackTime2;
+			}
+
+			return 0;
+		}
+
+		public float GetRangeAttackSpeed(DamageType damageType)
+		{
+			switch (damageType)
+			{
+				case DamageType.Type1:
+					return RangeAttackAnimationSpeed1;
+				case DamageType.Type2:
+					return RangeAttackAnimationSpeed2;
+			}
+
+			return 0;
 		}
 	}
 }

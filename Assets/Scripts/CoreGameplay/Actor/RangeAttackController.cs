@@ -16,6 +16,9 @@ namespace Actor
 		private IActor _actor = null;
 		private bool _canAttack = true;
 		private EnergyCommand _energyCommand = null;
+		private DamageType _damageType;
+		private MoveDirection _moveDirection;
+		private string _targetTag = null;
 
 		public Projectile ProjectilePrefab;
 
@@ -42,22 +45,33 @@ namespace Actor
 
 			_canAttack = false;
 
+			_damageType = damageType;
+			_moveDirection = direction;
+			_targetTag = targetTag;
+
 			switch (damageType)
 			{
 				case DamageType.Type1:
+					_animationController1?.SetFloat(_actorData.GetRangeAttackSpeed(damageType), "AttackSpeed");
 					_animationController1?.RangeAttack();
 					break;
 				case DamageType.Type2:
+					_animationController2?.SetFloat(_actorData.GetRangeAttackSpeed(damageType), "AttackSpeed");
 					_animationController2?.RangeAttack();
 					break;
 			}
-			Invoke(nameof(ResetCanAttack), _actorData.RangeAttackFrequency);
-			
+			Invoke(nameof(SpawnProjectile), _actorData.GetRangePreAttackTime(damageType));
+		}
+
+		private void SpawnProjectile()
+		{
 			var projectile = Instantiate(ProjectilePrefab, spawn.position, Quaternion.identity);
-			projectile.MoveDirection = direction;
-			projectile.DamageType = damageType;
-			projectile.DamageValue = _actorData.GetRangeDamageValue(damageType);
-			projectile.TargetTag = targetTag;
+			projectile.MoveDirection = _moveDirection;
+			projectile.DamageType = _damageType;
+			projectile.DamageValue = _actorData.GetRangeDamageValue(_damageType);
+			projectile.TargetTag = _targetTag;
+
+			Invoke(nameof(ResetCanAttack), _actorData.RangeAttackFrequency);
 		}
 
 		private void ResetCanAttack()

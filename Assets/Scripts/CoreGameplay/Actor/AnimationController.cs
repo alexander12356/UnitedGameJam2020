@@ -33,4 +33,9 @@ public class AnimationController : MonoBehaviour
 	{
 		_animationController.SetTrigger("RangeAttack");
 	}
+
+	public void SetFloat(float value, string id)
+	{
+		_animationController.SetFloat(id, value);
+	}
 }

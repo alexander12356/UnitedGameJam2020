@@ -38,15 +38,18 @@ namespace BR.Actor
 			
 			_damageCommand.DamageType = damageType;
 			_damageCommand.DamageValue = _actorData.GetMeleeDamageValue(damageType);
-			Invoke(nameof(AttackDelay), _actorData.MeleeAttack1Delay);
 			_moveDirection = direction;
 
 			switch (damageType)
 			{
 				case DamageType.Type1:
+					Invoke(nameof(AttackDelay), _actorData.MeleeAttack1Delay);
+					_animationController1?.SetFloat(_actorData.GetMeleeAttackAnimationSpeed(damageType), "AttackSpeed");
 					_animationController1?.Attack();
 					break;
 				case DamageType.Type2:
+					Invoke(nameof(AttackDelay), _actorData.MeleeAttack2Delay);
+					_animationController2?.SetFloat(_actorData.GetMeleeAttackAnimationSpeed(damageType), "AttackSpeed");
 					_animationController2?.Attack();
 					break;
 			}
@@ -65,7 +68,7 @@ namespace BR.Actor
 			}
 
 			_isAttacking = false;
-			_isStartAttack = false;
+			Invoke(nameof(CompleteAttack), _actorData.GetMeleeAttackDuration(_damageCommand.DamageType));
 			var position = _attackCollider2D.transform.position;
 
 			var direction = _moveDirection == MoveDirection.Left ? Vector2.left : Vector2.right;
@@ -82,6 +85,11 @@ namespace BR.Actor
 				_damageCommand.Execute(hit.collider.GetComponent<IActor>());
 				Debug.Log("Attack");
 			}
+		}
+
+		private void CompleteAttack()
+		{
+			_isStartAttack = false;
 		}
 	}
 }
