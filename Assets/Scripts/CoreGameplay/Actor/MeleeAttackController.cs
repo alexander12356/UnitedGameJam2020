@@ -15,16 +15,20 @@ namespace BR.Actor
 		private bool _isStartAttack = false;
 		private DamageCommand _damageCommand = null;
 		private MoveDirection _moveDirection = MoveDirection.Left;
+		private AudioSource _audioSource = null;
 		
 		[SerializeField] private AnimationController _animationController1 = null;
 		[SerializeField] private AnimationController _animationController2 = null;
 		[SerializeField] private CircleCollider2D _attackCollider2D = null;
 		[SerializeField] private LayerMask _targetMasks = -1;
+		[SerializeField] private AudioClip _attackSound1 = null;
+		[SerializeField] private AudioClip _attackSound2 = null;
 		
 		private void Awake()
 		{
 			_actorData = GetComponent<ActorData>();
 			_damageCommand = new DamageCommand();
+			_audioSource = GetComponent<AudioSource>();
 		}
 
 		public void Attack(DamageType damageType, MoveDirection direction)
@@ -44,11 +48,13 @@ namespace BR.Actor
 			{
 				case DamageType.Type1:
 					Invoke(nameof(AttackDelay), _actorData.MeleeAttack1Delay);
+					_audioSource?.PlayOneShot(_attackSound1);
 					_animationController1?.SetFloat(_actorData.GetMeleeAttackAnimationSpeed(damageType), "AttackSpeed");
 					_animationController1?.Attack();
 					break;
 				case DamageType.Type2:
 					Invoke(nameof(AttackDelay), _actorData.MeleeAttack2Delay);
+					_audioSource?.PlayOneShot(_attackSound2);
 					_animationController2?.SetFloat(_actorData.GetMeleeAttackAnimationSpeed(damageType), "AttackSpeed");
 					_animationController2?.Attack();
 					break;

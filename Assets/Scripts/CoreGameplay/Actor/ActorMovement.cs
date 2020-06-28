@@ -1,5 +1,7 @@
 ﻿using System;
 
+using UnityEditor;
+
 using UnityEngine;
 
 using Vector2 = UnityEngine.Vector2;
@@ -30,10 +32,12 @@ namespace BR.Actor
 		[SerializeField] private CircleCollider2D _checkGroundCollider2D = null;
 		[SerializeField] private LayerMask _groundMask = -1;
 		[SerializeField] private float _forcedCooldown = 0;
+		[SerializeField] private AudioClip _jumpClip = null;
 
 		public MoveDirection Direction => _moveDirection;
 		private Vector3 _rightScale;
 		private Vector3 _leftScale;
+		private AudioSource _audioSource;
 
 		public void LookAt(MoveDirection direction)
 		{
@@ -54,6 +58,7 @@ namespace BR.Actor
 			_rigidbody2d = GetComponentInChildren<Rigidbody2D>();
 			_leftScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 			_rightScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+			_audioSource = GetComponent<AudioSource>();
 		}
 
 		public void Move(float direction)
@@ -84,6 +89,7 @@ namespace BR.Actor
 			}
 
 			_isJump = true;
+			_audioSource?.PlayOneShot(_jumpClip);
 		}
 
 		public void AddForce(Vector2 force)
