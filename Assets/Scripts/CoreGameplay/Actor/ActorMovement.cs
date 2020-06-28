@@ -32,23 +32,28 @@ namespace BR.Actor
 		[SerializeField] private float _forcedCooldown = 0;
 
 		public MoveDirection Direction => _moveDirection;
+		private Vector3 _rightScale;
+		private Vector3 _leftScale;
+
 		public void LookAt(MoveDirection direction)
 		{
 			_moveDirection = direction;
 
 			if (direction == MoveDirection.Left)
 			{
-				transform.localScale = new Vector3(-1f, 1f, 1f);
+				transform.localScale = _leftScale;
 			}
 			else
 			{
-				transform.localScale = Vector3.one;
+				transform.localScale = _rightScale;
 			}
 		}
 
 		private void Awake()
 		{
 			_rigidbody2d = GetComponentInChildren<Rigidbody2D>();
+			_leftScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+			_rightScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 		}
 
 		public void Move(float direction)
