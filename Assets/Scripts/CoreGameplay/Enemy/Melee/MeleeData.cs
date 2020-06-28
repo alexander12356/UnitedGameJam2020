@@ -1,5 +1,7 @@
 ﻿using CommandPattern;
 
+using UnityEngine.Events;
+
 namespace BR.Enemy
 {
 	public class MeleeData : ActorData

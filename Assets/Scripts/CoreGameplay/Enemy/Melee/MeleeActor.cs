@@ -7,6 +7,7 @@ using BR.Enemy;
 using CommandPattern;
 
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MeleeActor : MonoBehaviour, IActor
 {
@@ -17,6 +18,7 @@ public class MeleeActor : MonoBehaviour, IActor
     [SerializeField] private GameObject _poofPrefab = null;
     [SerializeField] private AnimationController _animationController1;
     [SerializeField] private AnimationController _animationController2;
+	public UnityEvent onDeathAction;
     
     private void Awake()
     {
@@ -68,6 +70,7 @@ public class MeleeActor : MonoBehaviour, IActor
 
     public void Death()
     {
+        onDeathAction?.Invoke();
         Instantiate(_coinPrefab, transform.position, Quaternion.identity);
         var poof = Instantiate(_poofPrefab, transform.position, Quaternion.identity);
         Destroy(poof, 1f);

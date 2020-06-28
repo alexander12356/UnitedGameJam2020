@@ -257,8 +257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animationController1: {fileID: 7260402597404759388}
   _animationController2: {fileID: 6522418596868807064}
-  _speed: 5
-  _jumpForce: 500
+  _speed: 8
+  _jumpForce: 850
   _checkGroundCollider2D: {fileID: 115357170438485540}
   _groundMask:
     serializedVersion: 2
@@ -344,8 +344,8 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6795944146424025263}
   m_Enabled: 1
-  m_Force: {x: 0, y: 0}
-  m_RelativeForce: {x: 0, y: -10}
+  m_Force: {x: 0, y: -5}
+  m_RelativeForce: {x: 0, y: -20}
   m_Torque: 0
 --- !u!114 &6522418596868807064
 MonoBehaviour:

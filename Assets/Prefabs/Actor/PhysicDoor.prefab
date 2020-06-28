@@ -90,11 +90,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3347514025883320403}
-  - component: {fileID: 3347514025883320404}
+  - component: {fileID: 4305654369829209502}
   - component: {fileID: 3347514025883320405}
   - component: {fileID: 3347514025883320402}
   m_Layer: 9
-  m_Name: Door
+  m_Name: PhysicDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +115,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3347514025883320404
+--- !u!114 &4305654369829209502
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,16 +124,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 3347514025883320406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f63cb7b488f42c0a5b83a78fb546be5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3203966d3bfd4feaba461f1d131b076f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHP1: 10
+  _maxHP1: 4
   _maxHP2: 1
-  _currentHP1: 0
-  _currentHP2: 0
-  AttackValue: 0
-  AttackDelay: 0
+  _currentHP1: 4
+  _currentHP2: 1
+  MeleeAttackValue1: 0
+  MeleeAttackValue2: 0
+  MeleeAttack1Delay: 0
+  MeleeAttack2Delay: 0
+  MeleeAttackDuration1: 0
+  MeleeAttackDuration2: 0
+  MeleeAttackAnimationSpeed1: 0
+  MeleeAttackAnimationSpeed2: 0
+  RangeAttackValue1: 0
+  RangeAttackValue2: 0
+  RangePreAttackTime1: 0
+  RangePreAttackTime2: 0
+  RangeAttackAnimationSpeed1: 0
+  RangeAttackAnimationSpeed2: 0
+  RangeAttackFrequency: 0
+  RangeEnergyValue1: 0
+  RangeEnergyValue2: 0
   AttackDistance: 0
+  DamageForce: {x: 0, y: 0}
+  Coins: 0
+  _canAttackDistance: 0
+  AttackType: 0
+  DefenseType: 0
 --- !u!114 &3347514025883320405
 MonoBehaviour:
   m_ObjectHideFlags: 0
