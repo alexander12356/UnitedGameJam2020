@@ -199,15 +199,23 @@ MonoBehaviour:
   _currentHP2: 10
   MeleeAttackValue1: 2
   MeleeAttackValue2: 2
-  RangeAttackValue1: 4
-  RangeAttackValue2: 4
-  RangeEnergyValue1: 3
-  RangeEnergyValue2: 2
   MeleeAttack1Delay: 0.3
   MeleeAttack2Delay: 0.3
+  MeleeAttackDuration1: 0
+  MeleeAttackDuration2: 0
+  MeleeAttackAnimationSpeed1: 0
+  MeleeAttackAnimationSpeed2: 0
+  RangeAttackValue1: 4
+  RangeAttackValue2: 4
+  RangePreAttackTime1: 0
+  RangePreAttackTime2: 0
+  RangeAttackAnimationSpeed1: 0
+  RangeAttackAnimationSpeed2: 0
+  RangeAttackFrequency: 1
+  RangeEnergyValue1: 3
+  RangeEnergyValue2: 2
   AttackDistance: 4
   DamageForce: {x: 300, y: 300}
-  RangeAttackFrequency: 1
   Coins: 0
 --- !u!114 &6795944146424025248
 MonoBehaviour:
@@ -289,8 +297,8 @@ MonoBehaviour:
   ProjectilePrefab: {fileID: 8219404763849890635, guid: 6bb3a07755a0a9246a7198eb94b88b5f,
     type: 3}
   spawn: {fileID: 7110421201644866379}
-  _animationController1: {fileID: 0}
-  _animationController2: {fileID: 0}
+  _animationController1: {fileID: 7260402597404759388}
+  _animationController2: {fileID: 6522418596868807064}
 --- !u!50 &6795944146424025253
 Rigidbody2D:
   serializedVersion: 4
