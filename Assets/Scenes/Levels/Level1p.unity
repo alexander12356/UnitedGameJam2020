@@ -890,6 +890,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6795944146424025249, guid: a8363ce9e4ef38a48b5d0f223a0371d9,
+        type: 3}
+      propertyPath: _cinemachineVirtualCamera
+      value: 
+      objectReference: {fileID: 2002119611}
     - target: {fileID: 6795944146424025251, guid: a8363ce9e4ef38a48b5d0f223a0371d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1981,8 +1986,8 @@ Camera:
   m_GameObject: {fileID: 1554616902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
