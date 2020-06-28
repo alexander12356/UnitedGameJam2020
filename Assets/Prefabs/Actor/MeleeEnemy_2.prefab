@@ -90,6 +90,7 @@ MonoBehaviour:
   AttackDistance: 5.6
   DamageForce: {x: 100, y: 100}
   Coins: 0
+  DamageKnockbackResist: 4
   _canAttackDistance: 6
   AttackType: 0
   DefenseType: 0

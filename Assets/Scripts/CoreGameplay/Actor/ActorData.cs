@@ -43,6 +43,7 @@ namespace BR
 		public float AttackDistance = 0;
 		public Vector2 DamageForce = Vector2.zero;
 		public int Coins = 0;
+		public int DamageKnockbackResist = 0;
 
 		private IActor _actor;
 
