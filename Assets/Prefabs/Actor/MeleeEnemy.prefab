@@ -331,6 +331,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4267435615071992041}
     m_Modifications:
+    - target: {fileID: 1512562692418623026, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 428903415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512562692418623026, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999336048000942642, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 428903415
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999336048000942642, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3174884331902342771, guid: dd68797ce03f554408b51cd10b9e11fe,
         type: 3}
       propertyPath: m_Name
@@ -390,6 +410,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407123665414983927, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 428903415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3407123665414983927, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677452079889936808, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 428903415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3677452079889936808, guid: dd68797ce03f554408b51cd10b9e11fe,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5115532330512809909, guid: dd68797ce03f554408b51cd10b9e11fe,
         type: 3}
