@@ -64,6 +64,8 @@ public class RangeActor : MonoBehaviour, IActor
                 _animationController2?.Hurt();
                 break;
         }
+
+        _attackController.CancelAttack();
     }
 
     public void Death()

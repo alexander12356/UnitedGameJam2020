@@ -55,6 +55,13 @@ namespace BR.Actor
 			}
 		}
 
+		public void CancelAttack()
+		{
+			CancelInvoke(nameof(AttackDelay));
+			_isStartAttack = true;
+			Invoke(nameof(CompleteAttack), _actorData.GetMeleeAttackDuration(_damageCommand.DamageType));
+		}
+
 		private void AttackDelay()
 		{
 			_isAttacking = true;

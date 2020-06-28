@@ -78,5 +78,12 @@ namespace Actor
 		{
 			_canAttack = true;
 		}
+
+		public void CancelAttack()
+		{
+			CancelInvoke(nameof(SpawnProjectile));
+			_canAttack = false;
+			Invoke(nameof(ResetCanAttack), _actorData.RangeAttackFrequency);
+		}
 	}
 }

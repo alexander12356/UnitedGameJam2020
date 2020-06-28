@@ -62,6 +62,8 @@ public class MeleeActor : MonoBehaviour, IActor
                 _animationController2?.Hurt();
                 break;
         }
+
+        _attackController.CancelAttack();
     }
 
     public void Death()
