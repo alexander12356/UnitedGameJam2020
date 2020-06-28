@@ -5,6 +5,7 @@ using BR.Actor;
 using CommandPattern;
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace BR
 {
@@ -20,8 +21,8 @@ namespace BR
 		public int MeleeAttackValue2;
 		public float MeleeAttack1Delay = 0;
 		public float MeleeAttack2Delay = 0;
-		public float MeleeAttackDuration1 = 0;
-		public float MeleeAttackDuration2 = 0;
+		[FormerlySerializedAs("MeleeAttackDuration1")] public float MeleeAttackCooldown1 = 0;
+		[FormerlySerializedAs("MeleeAttackDuration2")] public float MeleeAttackCooldown2 = 0;
 		public float MeleeAttackAnimationSpeed1 = 0;
 		public float MeleeAttackAnimationSpeed2 = 0;
 		
@@ -120,9 +121,9 @@ namespace BR
 			switch (damageType)
 			{
 				case DamageType.Type1:
-					return MeleeAttackDuration1;
+					return MeleeAttackCooldown1;
 				case DamageType.Type2:
-					return MeleeAttackDuration2;
+					return MeleeAttackCooldown2;
 			}
 
 			return 0;
