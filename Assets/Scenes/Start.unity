@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222b154ff37a76e47bf2007fb6dc373e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxLevel: 3
+  _maxLevel: 5
 --- !u!82 &482663142
 AudioSource:
   m_ObjectHideFlags: 0
