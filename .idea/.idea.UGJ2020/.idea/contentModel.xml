@@ -34,6 +34,7 @@
               <e p="MoveCommand.cs" t="Include" />
               <e p="RangeAttackCommand.cs" t="Include" />
             </e>
+            <e p="DeathZOne.cs" t="Include" />
             <e p="Enemy" t="Include">
               <e p="DoorActor.cs" t="Include" />
               <e p="Melee" t="Include">

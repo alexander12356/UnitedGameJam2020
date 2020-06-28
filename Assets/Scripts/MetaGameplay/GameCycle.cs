@@ -130,4 +130,9 @@ public class GameCycle : MonoBehaviour
 		actorData.RangeAttackValue1 = PlayerStats.Instance.RangeAttackValue1;
 		actorData.RangeAttackValue2 = PlayerStats.Instance.RangeAttackValue2;
 	}
+
+	public void PlayerDead()
+	{
+		SceneManager.LoadScene("Main");
+	}
 }
