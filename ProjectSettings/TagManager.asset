@@ -48,3 +48,6 @@ TagManager:
   - name: Kellimor
     uniqueID: 41139
     locked: 0
+  - name: coin
+    uniqueID: 360640621
+    locked: 0
