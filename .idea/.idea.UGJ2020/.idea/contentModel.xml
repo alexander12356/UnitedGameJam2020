@@ -63,6 +63,7 @@
             </e>
           </e>
           <e p="MetaGameplay" t="Include">
+            <e p="GameCompleteScreen.cs" t="Include" />
             <e p="GameCycle.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
