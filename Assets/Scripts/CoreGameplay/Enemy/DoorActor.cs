@@ -8,6 +8,7 @@ using UnityEngine;
 public class DoorActor : MonoBehaviour, IActor
 {
     private IActorData _actorData = null;
+    public GameObject _poofPrefab = null;
  
     private void Awake()
     {
@@ -34,6 +35,8 @@ public class DoorActor : MonoBehaviour, IActor
 
     public void Death()
     {
+        var poof = Instantiate(_poofPrefab, transform.position, Quaternion.identity);
+        Destroy(poof, 1f);
         Destroy(gameObject);
     }
 
