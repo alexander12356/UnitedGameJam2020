@@ -26,6 +26,11 @@ public class GameCycle : MonoBehaviour
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
+	private void Start()
+	{
+		LoadMainMenu();
+	}
+
 	public void StartGame()
 	{
 		LoadLevel(0);
@@ -132,6 +137,11 @@ public class GameCycle : MonoBehaviour
 	}
 
 	public void PlayerDead()
+	{
+		Invoke(nameof(LoadMainMenu), 3f);
+	}
+
+	private void LoadMainMenu()
 	{
 		SceneManager.LoadScene("Main");
 	}

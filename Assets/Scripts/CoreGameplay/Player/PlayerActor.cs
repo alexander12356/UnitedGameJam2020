@@ -78,19 +78,14 @@ namespace BR
             _animationController1?.Death();
             _animationController2?.Death();
             Destroy(gameObject, 2f);
-            Invoke(nameof(PlayerDeath), 3f);
             _cinemachineVirtualCamera.Follow = null;
+            GameCycle.Instance.PlayerDead();
         }
 
         public void Die()
         {
             _actorData.Damage(_actorData._maxHP1, DamageType.Type1);
             _actorData.Damage(_actorData._maxHP2, DamageType.Type2);
-        }
-
-        public void PlayerDeath()
-        {
-            GameCycle.Instance.PlayerDead();
         }
 
         public void AddForce(Vector2 force)
