@@ -14,6 +14,7 @@ public class MeleeActor : MonoBehaviour, IActor
     private MeleeData _data;
     private IAttackController _attackController;
     private IMovement _movement;
+    private int _currentKnockCounter = 0;
     [SerializeField] private Coin _coinPrefab = null;
     [SerializeField] private GameObject _poofPrefab = null;
     [SerializeField] private AnimationController _animationController1;
@@ -54,6 +55,20 @@ public class MeleeActor : MonoBehaviour, IActor
         {
             AddForce(new Vector2(-_data.DamageForce.x, _data.DamageForce.y));
         }
+
+        if (_data.DamageKnockbackResist <= 0)
+        {
+           return; 
+        }
+
+        _currentKnockCounter++;
+
+        if (_currentKnockCounter < _data.DamageKnockbackResist)
+        {
+            return;
+        }
+       
+        _currentKnockCounter = 0;
         
         switch (type)
         {

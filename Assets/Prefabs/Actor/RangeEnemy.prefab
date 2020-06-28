@@ -124,7 +124,8 @@ MonoBehaviour:
   AttackDistance: 2
   DamageForce: {x: 100, y: 100}
   Coins: 0
-  _canAttackDistance: 6
+  DamageKnockbackResist: 0
+  _canAttackDistance: 12
   AttackType: 0
   DefenseType: 0
 --- !u!114 &3741786365647927549
