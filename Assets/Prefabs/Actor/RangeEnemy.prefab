@@ -218,8 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf5ead77542540d3bc7be89bd334096c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProjectilePrefab: {fileID: 8219404763849890635, guid: 6bb3a07755a0a9246a7198eb94b88b5f,
+  ProjectilePrefab1: {fileID: 8219404763849890635, guid: e34a7b13fc32b5d47a76060a2e540b11,
     type: 3}
+  ProjectilePrefab2: {fileID: 0}
   spawn: {fileID: 3997542700701132989}
   _animationController1: {fileID: 566982440401884895}
   _animationController2: {fileID: 566982440401884895}

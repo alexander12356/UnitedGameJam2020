@@ -20,7 +20,8 @@ namespace Actor
 		private MoveDirection _moveDirection;
 		private string _targetTag = null;
 
-		public Projectile ProjectilePrefab;
+		public Projectile ProjectilePrefab1;
+		public Projectile ProjectilePrefab2;
 
 		[SerializeField] private Transform spawn = null;
 		[SerializeField] private AnimationController _animationController1 = null;
@@ -65,7 +66,14 @@ namespace Actor
 
 		private void SpawnProjectile()
 		{
-			var projectile = Instantiate(ProjectilePrefab, spawn.position, Quaternion.identity);
+			var prefab = ProjectilePrefab1;
+
+			if (_damageType == DamageType.Type2)
+			{
+				prefab = ProjectilePrefab2;
+			}
+			
+			var projectile = Instantiate(prefab, spawn.position, Quaternion.identity);
 			projectile.MoveDirection = _moveDirection;
 			projectile.DamageType = _damageType;
 			projectile.DamageValue = _actorData.GetRangeDamageValue(_damageType);
