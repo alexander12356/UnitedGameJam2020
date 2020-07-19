@@ -24,6 +24,16 @@
               </e>
               <e p="MainMenuComponent.asmdef" t="Include" />
               <e p="Window" t="Include">
+                <e p="MainMenu" t="Include">
+                  <e p="Presenter" t="Include">
+                    <e p="IMainMenuWindowPresenter.cs" t="Include" />
+                    <e p="MainMenuWindowPresenter.cs" t="Include" />
+                  </e>
+                  <e p="View" t="Include">
+                    <e p="IMainMenuWindowView.cs" t="Include" />
+                    <e p="MainMenuWindowView.cs" t="Include" />
+                  </e>
+                </e>
                 <e p="StartGame" t="Include">
                   <e p="Model" t="Include">
                     <e p="IStartGameWindowModel.cs" t="Include" />
