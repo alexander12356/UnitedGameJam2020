@@ -21,7 +21,7 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    isReadable: 0
+    isReadable: 1
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     nPOTScale: 1
@@ -5386,7 +5386,18 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -18, y: -43}
-  platformSettings: []
+  platformSettings:
+  - name: Default
+    overridden: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0.35, y: 0.5}
   documentAlignment: 9
@@ -5707,4 +5718,6 @@ ScriptedImporter:
   textureAssetName: Kellymor Texture
   prefabAssetName: Kellymor Prefab
   spriteLibAssetName: Kellymor Sprite Lib
-  secondarySpriteTextures: []
+  secondarySpriteTextures:
+  - name: _NormalMap
+    texture: {fileID: 2800000, guid: fadf1c42ab6cb8449bafccbcc140b203, type: 3}
