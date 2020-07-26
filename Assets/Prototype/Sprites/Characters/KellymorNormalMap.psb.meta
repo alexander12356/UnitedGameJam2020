@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 97c048f961c4ad14ca33c32fb960c1ac
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Kelly_hand1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 84
+      width: 59
+      height: 94
+    spriteID: e6fe7df0288910041a9bbe2a89c6c487
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 175, y: 27}
+  - name: Kelly_arm1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 330
+      width: 62
+      height: 122
+    spriteID: c65720f3190a5c24e8162695a02c836f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -4, y: 208}
+  - name: Kelly_eyes
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 460
+      width: 78
+      height: 43
+    spriteID: a3247ca6ca0d70a46a218b03e2df8853
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -36, y: 290}
+  - name: Kelly_head
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 263
+      width: 152
+      height: 59
+    spriteID: c92f5fbf19a32714e97e2a1349d923fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -68, y: 105}
+  - name: Kelly_jaw1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 450
+      width: 50
+      height: 20
+    spriteID: 1bb9e7ac410abd841baa61f3b11f9c01
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 64, y: 313}
+  - name: Kelly_jaw2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 460
+      width: 49
+      height: 27
+    spriteID: aecb4399e381f1f47bfe3984ac6a087d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -121, y: 310}
+  - name: Kelly_vest
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 176
+      height: 171
+    spriteID: f829dd72508f2ec4eb1d44b7cf59525a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -48, y: -83}
+  - name: Kelly_pant
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 183
+      width: 139
+      height: 72
+    spriteID: 564db5fc4e015f4429d7e229a22a7690
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -65, y: 114}
+  - name: Kelly_leg1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 288
+      width: 37
+      height: 73
+    spriteID: 0528e586d8bfd1645ad099e6e9b4331a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 99, y: 279}
+  - name: Kelly_Leg2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 369
+      width: 37
+      height: 73
+    spriteID: 720513e75ddcf4447b375991f1b7f9c2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 22, y: 356}
+  - name: Kelly_hand2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 186
+      width: 59
+      height: 94
+    spriteID: 6da63d00b96e2304ea8c94c41cd996d8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -23, y: 126}
+  - name: Kelly_arm2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 330
+      width: 62
+      height: 122
+    spriteID: acb51d462ccd02f47ae721a385c13fee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -134, y: 205}
+  - name: Kelly_Ax
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 4
+      width: 211
+      height: 72
+    spriteID: c5466b44162a65b45b43e639df845303
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -18, y: -43}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 512
+  importedTextureHeight: 512
+  documentSize: {x: 422, y: 266}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 512
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Kelly_hand1
+    spriteName: Kelly_hand1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e6fe7df0288910041a9bbe2a89c6c487
+    layerID: 28
+    mosaicPosition: {x: 188, y: 84}
+  - name: Kelly_arm1
+    spriteName: Kelly_arm1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c65720f3190a5c24e8162695a02c836f
+    layerID: 24
+    mosaicPosition: {x: 4, y: 330}
+  - name: Kelly_eyes
+    spriteName: Kelly_eyes
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a3247ca6ca0d70a46a218b03e2df8853
+    layerID: 11
+    mosaicPosition: {x: 74, y: 460}
+  - name: Kelly_head
+    spriteName: Kelly_head
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c92f5fbf19a32714e97e2a1349d923fb
+    layerID: 4
+    mosaicPosition: {x: 4, y: 263}
+  - name: Kelly_jaw1
+    spriteName: Kelly_jaw1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1bb9e7ac410abd841baa61f3b11f9c01
+    layerID: 7
+    mosaicPosition: {x: 188, y: 450}
+  - name: Kelly_jaw2
+    spriteName: Kelly_jaw2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: aecb4399e381f1f47bfe3984ac6a087d
+    layerID: 6
+    mosaicPosition: {x: 4, y: 460}
+  - name: Kelly_vest
+    spriteName: Kelly_vest
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f829dd72508f2ec4eb1d44b7cf59525a
+    layerID: 48
+    mosaicPosition: {x: 4, y: 4}
+  - name: Kelly_pant
+    spriteName: Kelly_pant
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 564db5fc4e015f4429d7e229a22a7690
+    layerID: 15
+    mosaicPosition: {x: 4, y: 183}
+  - name: Kelly_leg1
+    spriteName: Kelly_leg1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0528e586d8bfd1645ad099e6e9b4331a
+    layerID: 17
+    mosaicPosition: {x: 188, y: 288}
+  - name: Kelly_Leg2
+    spriteName: Kelly_Leg2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 720513e75ddcf4447b375991f1b7f9c2
+    layerID: 39
+    mosaicPosition: {x: 188, y: 369}
+  - name: Kelly_hand2
+    spriteName: Kelly_hand2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6da63d00b96e2304ea8c94c41cd996d8
+    layerID: 30
+    mosaicPosition: {x: 188, y: 186}
+  - name: Kelly_arm2
+    spriteName: Kelly_arm2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: acb51d462ccd02f47ae721a385c13fee
+    layerID: 45
+    mosaicPosition: {x: 74, y: 330}
+  - name: Kelly_Ax
+    spriteName: Kelly_Ax
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c5466b44162a65b45b43e639df845303
+    layerID: 31
+    mosaicPosition: {x: 188, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: KellymorNormalMap Texture
+  prefabAssetName: KellymorNormalMap Prefab
+  spriteLibAssetName: KellymorNormalMap Sprite Lib
+  secondarySpriteTextures: []
