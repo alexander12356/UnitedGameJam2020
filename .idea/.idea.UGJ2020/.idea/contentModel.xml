@@ -14,6 +14,7 @@
               <e p="ApplicationComponent.asmdef" t="Include" />
               <e p="IGamePlayAccess.cs" t="Include" />
               <e p="IMainMenuAccess.cs" t="Include" />
+              <e p="IMainMenuSaveData.cs" t="Include" />
               <e p="ISaveSystemAccess.cs" t="Include" />
               <e p="ISettingsAccess.cs" t="Include" />
             </e>
