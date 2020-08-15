@@ -37,6 +37,12 @@
                     <e p="MainMenuWindowView.cs" t="Include" />
                   </e>
                 </e>
+                <e p="Settings" t="Include">
+                  <e p="Presenter" t="Include">
+                    <e p="ISettingsWindowPresenter.cs" t="Include" />
+                    <e p="SettingsWindowPresenter.cs" t="Include" />
+                  </e>
+                </e>
                 <e p="StartGame" t="Include">
                   <e p="Model" t="Include">
                     <e p="IStartGameWindowModel.cs" t="Include" />

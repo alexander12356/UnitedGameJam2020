@@ -25,5 +25,9 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 		private void SaveListGettedHandler(List<IMainMenuSaveData> saveList)
 		{
 		}
+
+		public void Open()
+		{
+		}
 	}
 }
