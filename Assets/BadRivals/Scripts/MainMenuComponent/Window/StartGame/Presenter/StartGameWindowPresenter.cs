@@ -10,7 +10,7 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 {
 	public class StartGameWindowPresenter : MonoBehaviour, IStartGameWindowPresenter
 	{
-		[Inject] private readonly ISaveSystemAccess _saveSystemAccess = null;
+		//[Inject] private readonly ISaveSystemAccess _saveSystemAccess = null;
 		
 		public void Start()
 		{
@@ -19,7 +19,7 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 
 		private void InitSaveList()
 		{
-			_saveSystemAccess.GetSaveList(SaveListGettedHandler);
+			//_saveSystemAccess.GetSaveList(SaveListGettedHandler);
 		}
 
 		private void SaveListGettedHandler(List<IMainMenuSaveData> saveList)
@@ -28,6 +28,7 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 
 		public void Open()
 		{
+			Debug.Log("Start game window opened");
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿namespace BadRivals.MainMenuComponent.Window.SettingsWindow
+﻿namespace BadRivals.MainMenuComponent.Window.Settings
 {
 	public interface ISettingsWindowPresenter
 	{
