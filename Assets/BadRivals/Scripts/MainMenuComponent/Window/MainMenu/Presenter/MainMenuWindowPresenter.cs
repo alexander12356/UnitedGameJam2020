@@ -1,5 +1,5 @@
 ﻿using BadRivals.MainMenuComponent.Window.MainMenu.View;
-using BadRivals.MainMenuComponent.Window.SettingsWindow;
+using BadRivals.MainMenuComponent.Window.Settings;
 using BadRivals.MainMenuComponent.Window.StartGame.Presenter;
 
 using UnityEngine;
