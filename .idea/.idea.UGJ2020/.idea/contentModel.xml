@@ -4,14 +4,13 @@
     <e p="C:\Users\alexa\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
     <e p="C:\Users\alexa\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_UGJ2020.-1431327585.00" t="ExcludeRecursive" />
     <e p="D:\projects\UnitedGameJam2020_project\UGJ2020" t="IncludeRecursive">
-      <e p="ApplicationComponent.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="BadRivals" t="Include">
           <e p="Scripts" t="Include">
             <e p="ApplicationComponent" t="Include">
-              <e p="ApplicationComponent.asmdef" t="Include" />
+              <e p="BadRivals.ApplicationComponent.asmdef" t="Include" />
               <e p="IGamePlayAccess.cs" t="Include" />
               <e p="IMainMenuAccess.cs" t="Include" />
               <e p="IMainMenuSaveData.cs" t="Include" />
@@ -19,13 +18,13 @@
               <e p="ISettingsAccess.cs" t="Include" />
             </e>
             <e p="GamePlayComponent" t="Include">
-              <e p="GamePlayComponent.asmdef" t="Include" />
+              <e p="BadRivals.GamePlayComponent.asmdef" t="Include" />
               <e p="Toolkit" t="Include">
                 <e p="MaterialColorChanger.cs" t="Include" />
               </e>
             </e>
             <e p="MainMenuComponent" t="Include">
-              <e p="MainMenuComponent.asmdef" t="Include" />
+              <e p="BadRivals.MainMenuComponent.asmdef" t="Include" />
               <e p="Window" t="Include">
                 <e p="MainMenu" t="Include">
                   <e p="Presenter" t="Include">
@@ -583,8 +582,9 @@
           </e>
         </e>
       </e>
-      <e p="GamePlayComponent.csproj" t="IncludeRecursive" />
-      <e p="MainMenuComponent.csproj" t="IncludeRecursive" />
+      <e p="BadRivals.ApplicationComponent.csproj" t="IncludeRecursive" />
+      <e p="BadRivals.GamePlayComponent.csproj" t="IncludeRecursive" />
+      <e p="BadRivals.MainMenuComponent.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

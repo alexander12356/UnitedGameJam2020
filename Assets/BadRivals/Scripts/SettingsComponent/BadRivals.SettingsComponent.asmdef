@@ -1,8 +1,6 @@
 {
-    "name": "MainMenuComponent",
-    "references": [
-        "GUID:9b265e4d3ba2fcd4dab2add968c39d9d"
-    ],
+    "name": "BadRivals.SettingsComponent",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
