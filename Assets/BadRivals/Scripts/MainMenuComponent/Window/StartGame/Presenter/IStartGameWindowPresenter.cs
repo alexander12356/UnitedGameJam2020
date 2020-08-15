@@ -2,6 +2,6 @@
 {
 	public interface IStartGameWindowPresenter
 	{
-		
+		void Open();
 	}
 }

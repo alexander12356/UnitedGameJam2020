@@ -6,13 +6,13 @@ namespace BadRivals.MainMenuComponent.Window.MainMenu.View
 {
 	public class MainMenuWindowView : MonoBehaviour, IMainMenuWindowView
 	{
-		public event Action OnGameStartButtonPressed;
+		public event Action OnStartGameButtonPressed;
 		public event Action OnSettingsButtonPressed;
 		public event Action OnQuitButtonPressed;
 
 		public void GameStartButtonPress()
 		{
-			OnGameStartButtonPressed?.Invoke();
+			OnStartGameButtonPressed?.Invoke();
 		}
 
 		public void SettingsButtonPressed()
@@ -23,6 +23,11 @@ namespace BadRivals.MainMenuComponent.Window.MainMenu.View
 		public void QuitButtonPress()
 		{
 			OnQuitButtonPressed?.Invoke();
+		}
+
+		public void Quit()
+		{
+			UnityEngine.Application.Quit();
 		}
 	}
 }
