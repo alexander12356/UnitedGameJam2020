@@ -67,6 +67,11 @@
                 </e>
               </e>
             </e>
+            <e p="SaveSystemComponent" t="Include">
+              <e p="BadRivals.SaveSystemComponent.asmdef" t="Include" />
+              <e p="SaveSystemAccess.cs" t="Include" />
+              <e p="SaveSystemInstaller.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -594,6 +599,7 @@
       <e p="BadRivals.ApplicationComponent.csproj" t="IncludeRecursive" />
       <e p="BadRivals.GamePlayComponent.csproj" t="IncludeRecursive" />
       <e p="BadRivals.MainMenuComponent.csproj" t="IncludeRecursive" />
+      <e p="BadRivals.SaveSystemComponent.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

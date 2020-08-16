@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 
 using BadRivals.Application;
+using BadRivals.MainMenuComponent.Window.StartGame.Model;
 
 using UnityEngine;
 
@@ -10,20 +11,28 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 {
 	public class StartGameWindowPresenter : MonoBehaviour, IStartGameWindowPresenter
 	{
-		//[Inject] private readonly ISaveSystemAccess _saveSystemAccess = null;
+		[Inject] private readonly IStartGameWindowView _view = null;
+		[Inject] private readonly IStartGameWindowModel _model = null;
 		
-		public void Start()
+		[Inject]
+		private void Construct()
 		{
-			InitSaveList();
+			_view.OnWindowLoaded += WindowLoadedHandler;
 		}
 
-		private void InitSaveList()
+		private void OnDestroy()
 		{
-			//_saveSystemAccess.GetSaveList(SaveListGettedHandler);
+			_view.OnWindowLoaded -= WindowLoadedHandler;
 		}
 
-		private void SaveListGettedHandler(List<IMainMenuSaveData> saveList)
+		private void WindowLoadedHandler()
 		{
+			_model.GetSaveList(SaveListGetHandler);
+		}
+
+		private void SaveListGetHandler(List<IMainMenuSaveData> saveList)
+		{
+			_view.InitSaveList(saveList);
 		}
 
 		public void Open()
