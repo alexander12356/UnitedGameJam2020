@@ -8,6 +8,8 @@ namespace BadRivals.MainMenuComponent.Window.StartGame
 	public interface IStartGameWindowView
 	{
 		event Action OnWindowLoaded;
+		event Action OnWindowOpened;
 		void InitSaveList(List<IMainMenuSaveData> saveList);
+		void OpenWindow();
 	}
 }

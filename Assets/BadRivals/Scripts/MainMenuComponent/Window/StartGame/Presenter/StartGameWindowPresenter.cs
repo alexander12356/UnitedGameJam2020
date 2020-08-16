@@ -18,11 +18,13 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 		private void Construct()
 		{
 			_view.OnWindowLoaded += WindowLoadedHandler;
+			_view.OnWindowOpened += WindowOpenedHandler;
 		}
 
 		private void OnDestroy()
 		{
 			_view.OnWindowLoaded -= WindowLoadedHandler;
+			_view.OnWindowOpened -= WindowOpenedHandler;
 		}
 
 		private void WindowLoadedHandler()
@@ -37,7 +39,11 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 
 		public void Open()
 		{
-			Debug.Log("Start game window opened");
+			_view.OpenWindow();
+		}
+
+		private void WindowOpenedHandler()
+		{
 		}
 	}
 }

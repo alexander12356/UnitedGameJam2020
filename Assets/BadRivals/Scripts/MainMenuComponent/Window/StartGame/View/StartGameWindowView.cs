@@ -10,6 +10,7 @@ namespace BadRivals.MainMenuComponent.Window.StartGame
 	public class StartGameWindowView : MonoBehaviour, IStartGameWindowView
 	{
 		public event Action OnWindowLoaded;
+		public event Action OnWindowOpened;
 
 		private void Start()
 		{
@@ -17,6 +18,10 @@ namespace BadRivals.MainMenuComponent.Window.StartGame
 		}
 
 		public void InitSaveList(List<IMainMenuSaveData> saveList)
+		{
+		}
+
+		public void OpenWindow()
 		{
 		}
 	}
