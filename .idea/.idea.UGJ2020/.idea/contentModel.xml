@@ -25,6 +25,13 @@
               </e>
             </e>
             <e p="MainMenuComponent" t="Include">
+              <e p="Animator" t="Include">
+                <e p="IMainMenuCameraController.cs" t="Include" />
+                <e p="IWindowShowAnimator.cs" t="Include" />
+                <e p="MainMenuCameraController.cs" t="Include" />
+                <e p="MainMenuCameraControllerInstaller.cs" t="Include" />
+                <e p="WindowShowAnimator.cs" t="Include" />
+              </e>
               <e p="BadRivals.MainMenuComponent.asmdef" t="Include" />
               <e p="Window" t="Include">
                 <e p="MainMenu" t="Include">

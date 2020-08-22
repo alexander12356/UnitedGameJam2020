@@ -9,7 +9,9 @@ namespace BadRivals.MainMenuComponent.Window.StartGame
 	{
 		event Action OnWindowLoaded;
 		event Action OnWindowOpened;
+		event Action OnCloseButtonPressed;
 		void InitSaveList(List<IMainMenuSaveData> saveList);
 		void OpenWindow();
+		void CloseWindow();
 	}
 }

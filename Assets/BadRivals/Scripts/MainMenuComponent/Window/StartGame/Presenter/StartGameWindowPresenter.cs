@@ -19,12 +19,14 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 		{
 			_view.OnWindowLoaded += WindowLoadedHandler;
 			_view.OnWindowOpened += WindowOpenedHandler;
+			_view.OnCloseButtonPressed += CloseButtonPressedHandler;
 		}
 
 		private void OnDestroy()
 		{
 			_view.OnWindowLoaded -= WindowLoadedHandler;
 			_view.OnWindowOpened -= WindowOpenedHandler;
+			_view.OnCloseButtonPressed -= CloseButtonPressedHandler;
 		}
 
 		private void WindowLoadedHandler()
@@ -44,6 +46,11 @@ namespace BadRivals.MainMenuComponent.Window.StartGame.Presenter
 
 		private void WindowOpenedHandler()
 		{
+		}
+
+		private void CloseButtonPressedHandler()
+		{
+			_view.CloseWindow();
 		}
 	}
 }
