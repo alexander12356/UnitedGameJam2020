@@ -30,6 +30,9 @@ namespace BadRivals.MainMenuComponent.Animator
 		{
 			_showSequence.Kill();
 			_showSequence = null;
+
+			_hideSequence.Kill();
+			_hideSequence = null;
 		}
 
 		public void Show()
