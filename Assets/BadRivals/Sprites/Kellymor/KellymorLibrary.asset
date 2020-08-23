@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: KellymorLibrary
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: KellyEyes
+    m_Hash: -1018492911
+    m_CategoryList:
+    - m_Name: Eye1
+      m_Hash: -1610958060
+      m_Sprite: {fileID: -3486747261054980935, guid: a399ad028d90d05408cf925ccc03c548,
+        type: 3}
+    - m_Name: EyeOpen1
+      m_Hash: 1890990125
+      m_Sprite: {fileID: 21300000, guid: 519b86d7707bbdd4d8503db8eb598480, type: 3}
+    - m_Name: EyeClosed1
+      m_Hash: 696031162
+      m_Sprite: {fileID: 21300000, guid: 70f92d657c85bd344ae72ac3d041ec5c, type: 3}
+    - m_Name: Eye2
+      m_Hash: 116648622
+      m_Sprite: {fileID: 7749941088205092717, guid: a399ad028d90d05408cf925ccc03c548,
+        type: 3}
+    - m_Name: EyeOpen2
+      m_Hash: -373331561
+      m_Sprite: {fileID: 21300000, guid: dddc77e5330c6a4439db04875e1f5805, type: 3}
+    - m_Name: EyeClosed2
+      m_Hash: -1334458880
+      m_Sprite: {fileID: 21300000, guid: 1df150e880d2b7f4e8ae1dbfb5f3f4c8, type: 3}
+    - m_Name: EyeSemiClosed1
+      m_Hash: 1531300900
+      m_Sprite: {fileID: 21300000, guid: 813907d002549b849a0ed5ca7e1c47d5, type: 3}
+    - m_Name: EyeSemiClosed2
+      m_Hash: -1035166306
+      m_Sprite: {fileID: 21300000, guid: 4edd55ff47df17a418ac1f1d8ee7a68c, type: 3}
+  - m_Name: KellyArms
+    m_Hash: -2002388305
+    m_CategoryList:
+    - m_Name: Hand1
+      m_Hash: 1060977728
+      m_Sprite: {fileID: -1571992899593782910, guid: a399ad028d90d05408cf925ccc03c548,
+        type: 3}
+    - m_Name: Handturn1
+      m_Hash: 2055767020
+      m_Sprite: {fileID: 21300000, guid: 1f5d34b8a03749948bb30aae3f10f9e6, type: 3}
+    - m_Name: Hand2
+      m_Hash: -1506513414
+      m_Sprite: {fileID: 4318059794492411891, guid: a399ad028d90d05408cf925ccc03c548,
+        type: 3}
+    - m_Name: Handturn2
+      m_Hash: -478031274
+      m_Sprite: {fileID: 21300000, guid: 24bcd2344bfa0fd40806647c160aef37, type: 3}
