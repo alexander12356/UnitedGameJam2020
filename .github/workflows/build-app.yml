@@ -25,7 +25,7 @@ jobs:
           key: Library
 
       - name: Build Application
-        uses: game-ci/unity-builder@v2
+        uses: game-ci/unity-builder@v2.0-alpha-10
         env:
           UNITY_LICENSE: '<?xml version="1.0" encoding="UTF-8"?><root>
     <License id="Terms">
@@ -69,7 +69,6 @@ s+TW1uglnJ0Qv5N9kdHTlVfU1TB39y+XNXDJAw==</SignatureValue></Signature></root>'
           targetPlatform: WebGL
           unityVersion: 2020.3.9f1
           buildsPath: Build
-          customParameters: '-nographics' # https://github.com/game-ci/unity-actions/issues/84#issuecomment-676820772
 
       - name: Output Application
         uses: actions/upload-artifact@v2
