@@ -17,6 +17,6 @@
 ## Лицензии
 
 - Лицензия Unity
-    - Licenses/Unity_v2019.3.11f1.alf - Запрос free-лицензии Unity
-    - Licenses/Unity_v2019.x.ulf - Free-лицензия Unity
+    - Licenses/Unity_v2020.3.9f1.alf - Запрос free-лицензии Unity
+    - Licenses/Unity_v2020.x.ulf - Free-лицензия Unity
     - Документация по выпуску лицензии: https://game.ci/docs/github/activation

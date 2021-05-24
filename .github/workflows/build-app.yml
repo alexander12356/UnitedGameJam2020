@@ -50,21 +50,21 @@ jobs:
         <DeveloperData Value="AQAAAEY0LUVEUFUtOVFGTS1DWFdDLVNLUkUtQUtQTg=="/>
         <SerialMasked Value="F4-EDPU-9QFM-CXWC-SKRE-XXXX"/>
         <StartDate Value="2021-05-24T00:00:00"/>
-        <UpdateDate Value="2021-05-25T19:09:17"/>
+        <UpdateDate Value="2021-05-25T20:25:02"/>
         <InitialActivationDate Value="2021-05-24T16:14:05"/>
         <LicenseVersion Value="6.x"/>
-        <ClientProvidedVersion Value="2019.3.11f1"/>
+        <ClientProvidedVersion Value="2020.3.9f1"/>
         <AlwaysOnline Value="false"/>
         <Entitlements>
             <Entitlement Ns="unity_editor" Tag="UnityPersonal" Type="EDITOR" ValidTo="9999-12-31T00:00:00"/>
             <Entitlement Ns="unity_editor" Tag="DarkSkin" Type="EDITOR_FEATURE" ValidTo="9999-12-31T00:00:00"/>
         </Entitlements>
     </License>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#Terms"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>Qqhu/i98ZwnW+0YDU0x+70kdRxA=</DigestValue></Reference></SignedInfo><SignatureValue>Lhj1VHqogrLXLcFI8i6lt+cViXSvbEPTNIROJVRk/K0nh5mawn3GJZeAXYcgUAqPSqXprrbNLjrd
-1TL6ar5dJhvZgBbcxbrTb7JYxGf7RCtqYd9lpuDCSk1bnDcUa8LFv+y/YRXHBHpEa+YMhJSKqG+J
-HC+JK5MnUzJKKgnAGEhckv1MoxBWXvMIIIg/T6U6CjAmKlvWoSjrEJcxPZ4nalzBopCZQGaaU9Qb
-4+uGKwInI3AjDc2Sj9wJTQPE2a001SSiRACf8sDvsDJQd+Y7s3lwyiT5JSumyuT9CID/oeoseZr1
-1u1oXItQM0F4VnWUhUIVyMgvHWOap3a4GidQUA==</SignatureValue></Signature></root>'
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#Terms"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>jjaanqndDKu5acFmpzuhO3hv8P8=</DigestValue></Reference></SignedInfo><SignatureValue>x9e1n68qIrFiDQJqRDRGG69UmhtyyVzAnCe9IHwexJF5YCs90sZEGya3RlFnULj5LhTDEe/1l1uf
+KT+cV7BCj0XEPsJLlh4IkB3P663xVdz9DdTcJUZDx+0blkU+yc/WYwVHGU1YLDc/TWMje1XNjzeI
+JunpI6zpeSEYHC+9xTysr5vMECueoXYrY/tlTmY2in0inEa6KSYd02NO6tqKrobePtQzvDhW4a8z
+Ilmrrzb9jC6/F9R1ppKEMLWJEmXIikOitsixScv9hTteP3bOlynFMBTNVdlmzJK2Naloxb6xN3Gb
+s+TW1uglnJ0Qv5N9kdHTlVfU1TB39y+XNXDJAw==</SignatureValue></Signature></root>'
         with:
           targetPlatform: WebGL
           unityVersion: 2020.3.9f1
