@@ -66,11 +66,12 @@ HC+JK5MnUzJKKgnAGEhckv1MoxBWXvMIIIg/T6U6CjAmKlvWoSjrEJcxPZ4nalzBopCZQGaaU9Qb
 4+uGKwInI3AjDc2Sj9wJTQPE2a001SSiRACf8sDvsDJQd+Y7s3lwyiT5JSumyuT9CID/oeoseZr1
 1u1oXItQM0F4VnWUhUIVyMgvHWOap3a4GidQUA==</SignatureValue></Signature></root>'
         with:
-          targetPlatform: WebGL
+          targetPlatform: StandaloneWindows
           unityVersion: 2019.3.11f1
+          buildsPath: Build
 
       - name: Output Application
         uses: actions/upload-artifact@v2
         with:
           name: Build
-          path: build
+          path: Build
