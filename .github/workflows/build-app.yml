@@ -1,10 +1,9 @@
-# Статьи
-# 1. Пример YAML файла: https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#create-an-example-workflow
-# 2. Инструкцию по развертыванию CI/CD: https://habr.com/ru/company/jugru/blog/505994/
-# 3. Сборка Unity-проекта: https://game.ci/docs/github/getting-started
-# 4. Доступные окружения: https://github.com/actions/virtual-environments#available-environments
-# 5. Справочник по аргументам unity.exe: https://docs.unity3d.com/Manual/CommandLineArguments.html
-# 6. Пример сборки проекта на Unity: https://habr.com/ru/post/479884/
+# Использованные источники
+# - Документация GitHub Actions: https://docs.github.com/en/actions/learn-github-actions/
+# - Доступные окружения для Runner-ов GitHub Actions: https://github.com/actions/virtual-environments#available-environments
+# - Action-ы для сборки проектов на Unity: https://game.ci/docs/github/getting-started
+# - Справочник по аргументам Unity.exe: https://docs.unity3d.com/Manual/CommandLineArguments.html
+# - Инструкцию по развертыванию CI/CD: https://habr.com/ru/company/jugru/blog/505994/
 
 name: Build Application
 on: [push]
@@ -27,6 +26,7 @@ jobs:
       - name: Build Application
         uses: game-ci/unity-builder@v2.0-alpha-10
         env:
+          # TODO: положить лицензию в secrets
           UNITY_LICENSE_FILE: ./Licenses/Unity_v2019.x.ulf
         with:
           targetPlatform: StandaloneWindows
