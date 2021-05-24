@@ -6,8 +6,8 @@
 # 5. Справочник по аргументам unity.exe: https://docs.unity3d.com/Manual/CommandLineArguments.html
 # 6. Пример сборки проекта на Unity: https://habr.com/ru/post/479884/
 
-name: build-app
-on: [pull_request, push]
+name: Build Application
+on: [push]
 jobs:
   build-app:
     runs-on: ubuntu-latest
