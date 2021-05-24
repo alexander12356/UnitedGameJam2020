@@ -1,4 +1,5 @@
 # https://game.ci/docs/github/activation
+
 name: Unity License Request
 on:
   workflow_dispatch: {}
