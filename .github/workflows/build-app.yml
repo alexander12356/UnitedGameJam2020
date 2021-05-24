@@ -13,10 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          lfs: true
 
-      - name: Build application
+      - name: Caching Library
+        uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library
+
+      - name: Build Application
         uses: game-ci/unity-builder@v2
         env:
           UNITY_LICENSE: '<?xml version="1.0" encoding="UTF-8"?><root>
@@ -59,3 +67,10 @@ HC+JK5MnUzJKKgnAGEhckv1MoxBWXvMIIIg/T6U6CjAmKlvWoSjrEJcxPZ4nalzBopCZQGaaU9Qb
 1u1oXItQM0F4VnWUhUIVyMgvHWOap3a4GidQUA==</SignatureValue></Signature></root>'
         with:
           targetPlatform: WebGL
+          unityVersion: 2019.3.11f1
+
+      - name: Output Application
+        uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: build
