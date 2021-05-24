@@ -1,0 +1,8 @@
+name: Output Application
+runs:
+  using: composite
+  steps:
+    uses: actions/upload-artifact@v2
+    with:
+      name: Build
+      path: Build
