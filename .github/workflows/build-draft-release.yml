@@ -42,7 +42,7 @@ jobs:
           # TODO: положить лицензию в secrets
           UNITY_LICENSE_FILE: ./licenses/Unity_v2019.x.ulf
         with:
-          targetPlatform: WebGL
+          targetPlatform: StandaloneWindows64
           unityVersion: 2019.3.11f1
           buildsPath: Build
 
