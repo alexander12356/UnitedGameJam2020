@@ -18,7 +18,7 @@ jobs:
           path: Library
           key: Library
 
-      - uses: game-ci/unity-test-runner@v2
+      - uses: game-ci/unity-test-runner@v2.0-alpha-5
         env:
           # TODO: положить лицензию в secrets
           UNITY_LICENSE_FILE: ../licenses/Unity_v2019.x.ulf
