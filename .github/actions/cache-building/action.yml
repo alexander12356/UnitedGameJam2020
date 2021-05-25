@@ -1,8 +1,0 @@
-name: Cache Building
-runs:
-  using: composite
-  steps:
-    uses: actions/cache@v2
-    with:
-      path: Library
-      key: Library
