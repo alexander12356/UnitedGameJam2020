@@ -24,10 +24,10 @@ jobs:
           ref: ${{ github.ref }}
           lfs: true
 
-      - uses: actions/cache@v2
-        with:
-          path: Library
-          key: Library
+      # - uses: actions/cache@v2
+      #   with:
+      #     path: Library
+      #     key: Library
 
       - uses: game-ci/unity-test-runner@v2.0-alpha-5
         env:
