@@ -15,7 +15,9 @@ jobs:
           path: Library
           key: Library
 
-      - run: ls -la
+      - run: |
+        pwd
+        ls -la
 
       - uses: game-ci/unity-test-runner@v2
         env:
