@@ -7,6 +7,7 @@
 # - https://github.com/release-drafter/release-drafter
 # - https://github.com/actions/download-artifact
 # - https://github.com/actions/upload-artifact
+# - https://github.com/actions/checkout
 
 name: Build Draft Release
 on:
@@ -14,7 +15,6 @@ on:
     branches:
       - main
 jobs:
-
   build-application:
     runs-on: ubuntu-latest
     steps:
@@ -32,7 +32,7 @@ jobs:
       - uses: game-ci/unity-builder@v2.0-alpha-10
         env:
           # TODO: положить лицензию в secrets
-          UNITY_LICENSE_FILE: ./Licenses/Unity_v2019.x.ulf
+          UNITY_LICENSE_FILE: ./licenses/Unity_v2019.x.ulf
         with:
           targetPlatform: WebGL
           unityVersion: 2019.3.11f1
