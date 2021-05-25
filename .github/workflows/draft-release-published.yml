@@ -1,0 +1,29 @@
+# https://github.com/marketplace/actions/add-commit
+
+name: Draft Release Published
+on:
+  release:
+    types: [published]
+jobs:
+  build-application:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+          lfs: true
+
+      - uses: game-ci/unity-builder@v2.0-alpha-10
+        env:
+          # TODO: положить лицензию в secrets
+          UNITY_LICENSE_FILE: ./licenses/Unity_v2019.x.ulf
+        with:
+          targetPlatform: WebGL
+          unityVersion: 2019.3.11f1
+          buildsPath: docs
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          default_author: github_actions
+          message: 'New release'
