@@ -1,5 +1,10 @@
 # UnitedGameJam2020
 
+## CI
+
+- `build-draft-release` - генерирует Draft-релиз
+- `unity-license-request` - нужна для генерации файла активации Unity
+
 ## Ветки
 
 - `master` - ветка последнего релиза
@@ -16,7 +21,8 @@
 
 ## Лицензии
 
+- Лицензия проекта: [LICENSE](./LICENSE)
 - Лицензия Unity
-    - Licenses/Unity_v2019.3.11f1.alf - Запрос free-лицензии Unity
-    - Licenses/Unity_v2019.x.ulf - Free-лицензия Unity
+    - [Licenses/Unity_v2019.3.11f1.alf](./Licenses/Unity_v2019.3.11f1.alf) - Файл активации Unity
+    - [Licenses/Unity_v2019.x.ulf](./Licenses/Unity_v2019.x.ulf) - Free-лицензия Unity
     - Документация по выпуску лицензии: https://game.ci/docs/github/activation

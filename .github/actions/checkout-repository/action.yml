@@ -1,7 +1,0 @@
-name: Checkout Repository
-runs:
-  using: composite
-  steps:
-    uses: actions/checkout@v2
-    with:
-      lfs: true

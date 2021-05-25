@@ -8,11 +8,14 @@ categories:
   - title: '🐛 Bugs fixes'
     labels:
       - 'bug'
+  - title: '🤖 CI/CD'
+    labels:
+      - 'ci'
   - title: '📕 Documentation'
     labels:
-      - 'type:documentation'
+      - 'documentation'
 
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 template: |
-  ## What`s changed
+  ## ❓ Unlabelled changes
   $CHANGES
