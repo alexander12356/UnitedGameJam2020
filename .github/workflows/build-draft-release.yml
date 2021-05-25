@@ -24,18 +24,18 @@ jobs:
           ref: ${{ github.ref }}
           lfs: true
 
-      # - uses: actions/cache@v2
-      #   with:
-      #     path: Library
-      #     key: Library
-
-      - uses: game-ci/unity-test-runner@v2.0-alpha-5
-        env:
-          # TODO: положить лицензию в secrets
-          UNITY_LICENSE_FILE: ../licenses/Unity_v2019.x.ulf
+      - uses: actions/cache@v2
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          unityVersion: 2019.3.11f1
+          path: Library
+          key: Library
+
+      # - uses: game-ci/unity-test-runner@v2.0-alpha-5
+      #   env:
+      #     # TODO: положить лицензию в secrets
+      #     UNITY_LICENSE_FILE: ../licenses/Unity_v2019.x.ulf
+      #   with:
+      #     githubToken: ${{ secrets.GITHUB_TOKEN }}
+      #     unityVersion: 2019.3.11f1
 
       - uses: game-ci/unity-builder@v2.0-alpha-10
         env:
