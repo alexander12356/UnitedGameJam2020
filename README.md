@@ -1,5 +1,13 @@
 # UnitedGameJam2020
 
+[![Build Docs](https://github.com/alexander12356/UnitedGameJam2020/actions/workflows/build-docs.yml/badge.svg)](https://github.com/alexander12356/UnitedGameJam2020/actions/workflows/build-docs.yml)
+
+
+## Процесс разработки
+
+![alt text](./docs/ContributingProcess.png)
+
+
 ## CI workflows
 
 - `build-draft-release` - генерирует draft-релиз, после `push` в ветку `master`
