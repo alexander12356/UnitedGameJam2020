@@ -27,3 +27,4 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           unityVersion: 2019.3.11f1
+          projectPath: /home/runner/work/UnitedGameJam2020/UnitedGameJam2020
