@@ -19,11 +19,12 @@ jobs:
         run: |
           pwd
           ls -la
+          printenv | grep GITHUB_WORKSPACE
 
       - uses: game-ci/unity-test-runner@v2
         env:
           # TODO: положить лицензию в secrets
-          UNITY_LICENSE_FILE: ./licenses/Unity_v2019.x.ulf
+          UNITY_LICENSE_FILE: ../licenses/Unity_v2019.x.ulf
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           unityVersion: 2019.3.11f1
