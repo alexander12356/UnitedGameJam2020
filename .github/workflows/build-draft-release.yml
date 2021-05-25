@@ -7,6 +7,7 @@
 # - https://github.com/release-drafter/release-drafter
 # - https://github.com/actions/download-artifact
 # - https://github.com/actions/upload-artifact
+# - https://github.com/actions/checkout
 
 name: Build Draft Release
 on:

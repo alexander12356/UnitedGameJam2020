@@ -1,0 +1,24 @@
+name: Run Tests
+on: [push]
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+          lfs: true
+
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library
+
+      - uses: game-ci/unity-test-runner@v2
+        env:
+          # TODO: положить лицензию в secrets
+          UNITY_LICENSE_FILE: ./Licenses/Unity_v2019.x.ulf
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          unityVersion: 2019.3.11f1
