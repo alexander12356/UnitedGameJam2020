@@ -24,6 +24,7 @@ ScriptedImporter:
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
+    vTOnly: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -42,6 +43,9 @@ ScriptedImporter:
     textureType: 8
     textureShape: 1
     singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -102,10 +106,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_4
+      guid: 
       position: {x: 226.77534, y: 37.848083, z: 0}
       rotation: {x: 0, y: 0, z: 0.9999526, w: 0.009732679}
       length: 193.54541
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 9.085007, y: 5.792}
@@ -603,15 +611,23 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_6
+      guid: 
       position: {x: 26.41404, y: -0.000021310632, z: 0}
       rotation: {x: 0, y: 0, z: 0.31483147, w: 0.9491476}
       length: 28.438526
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_5
+      guid: 
       position: {x: 21.167542, y: 60.04187, z: 0}
       rotation: {x: 0, y: 0, z: 0.85435766, w: -0.51968545}
       length: 26.414019
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 19.617004, y: 2.2089996}
@@ -1079,20 +1095,32 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_1
+      guid: 
       position: {x: 32.638733, y: 7.29842, z: 0}
       rotation: {x: 0, y: 0, z: 0.72298265, w: 0.6908663}
       length: 55.344994
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_2
+      guid: 
       position: {x: 55.344994, y: 0.000025775558, z: 0}
       rotation: {x: 0, y: 0, z: 0.0660386, w: 0.9978171}
       length: 16.596075
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_3
+      guid: 
       position: {x: 16.596045, y: -0.00001806931, z: 0}
       rotation: {x: 0, y: 0, z: -0.06313784, w: 0.9980048}
       length: 16.356577
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 43.549988, y: 5.301998}
@@ -1461,15 +1489,23 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_8
+      guid: 
       position: {x: 24.002594, y: -0.000001319587, z: 0}
       rotation: {x: 0, y: 0, z: -0.29089156, w: 0.9567561}
       length: 31.51397
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_7
+      guid: 
       position: {x: 7.596863, y: 59.87957, z: 0}
       rotation: {x: 0, y: 0, z: -0.5056667, w: 0.8627289}
       length: 24.0026
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 19.799988, y: 1.4960003}
@@ -1952,95 +1988,80 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 232, y: 3}
-  platformSettings: []
-  mosaicLayers: 1
-  documentPivot: {x: 0.65, y: 0.5}
-  documentAlignment: 9
-  importHiddenLayers: 0
-  importedTextureWidth: 512
-  importedTextureHeight: 128
-  documentSize: {x: 348, y: 216}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 512
-  textureActualHeight: 128
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Meleenemy_lhead
-    spriteName: Meleenemy_lhead
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 99d47bb9dc5cf794cbaf82735b1e1ed1
-    layerID: 3
-    mosaicPosition: {x: 4, y: 4}
-  - name: Meleenemy_leg1
-    spriteName: Meleenemy_leg1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 41a6ef5914e1413469d6e7b717d24c59
-    layerID: 14
-    mosaicPosition: {x: 427, y: 4}
-  - name: Meleenemy_lbod
-    spriteName: Meleenemy_lbod
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 1db5941c99df68b48b81b89c67f6b538
-    layerID: 7
-    mosaicPosition: {x: 360, y: 4}
-  - name: Meleenemy_leg2
-    spriteName: Meleenemy_leg2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 1a6be11759e4533438d6f3975b23867c
-    layerID: 5
-    mosaicPosition: {x: 465, y: 4}
   characterData:
     bones:
     - name: bone_1
+      guid: 
       position: {x: 232.63873, y: 61.29842, z: 0}
       rotation: {x: 0, y: 0, z: 0.72298265, w: 0.6908663}
       length: 55.344997
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_2
+      guid: 
       position: {x: 55.344997, y: 0.00000042497652, z: 0}
       rotation: {x: 0, y: 0, z: 0.06603858, w: 0.9978171}
       length: 16.596075
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_3
+      guid: 
       position: {x: 16.596066, y: 0.000009585152, z: 0}
       rotation: {x: 0, y: 0, z: -0.06313782, w: 0.99800485}
       length: 16.356577
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_4
+      guid: 
       position: {x: 33.903625, y: -1.319737, z: 0}
       rotation: {x: 0, y: 0, z: 0.68167305, w: 0.7316569}
       length: 193.54536
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_5
+      guid: 
       position: {x: -0.77977705, y: 10.517463, z: 0}
       rotation: {x: 0, y: -0, z: 0.96597046, w: 0.2586526}
       length: 26.414011
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_6
+      guid: 
       position: {x: 26.414007, y: 0.00000070734905, z: 0}
       rotation: {x: 0, y: 0, z: 0.31483144, w: 0.94914764}
       length: 28.438517
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_7
+      guid: 
       position: {x: -0.7797792, y: -7.9308844, z: 0}
       rotation: {x: 0, y: -0, z: -0.97308606, w: 0.2304421}
       length: 24.002596
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_8
+      guid: 
       position: {x: 24.00259, y: -0.0000003160203, z: 0}
       rotation: {x: 0, y: 0, z: -0.29089153, w: 0.95675606}
       length: 31.513966
       parentId: 6
+      color:
+        serializedVersion: 2
+        rgba: 0
     parts:
     - spritePosition:
         x: 0
@@ -2080,8 +2101,66 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0.65, y: 0.5}
+  documentAlignment: 9
+  importHiddenLayers: 0
+  importedTextureWidth: 512
+  importedTextureHeight: 128
+  documentSize: {x: 348, y: 216}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 512
+  textureActualHeight: 128
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Meleenemy_lhead
+    spriteName: Meleenemy_lhead
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 99d47bb9dc5cf794cbaf82735b1e1ed1
+    layerID: 3
+    mosaicPosition: {x: 4, y: 4}
+  - name: Meleenemy_leg1
+    spriteName: Meleenemy_leg1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41a6ef5914e1413469d6e7b717d24c59
+    layerID: 14
+    mosaicPosition: {x: 427, y: 4}
+  - name: Meleenemy_lbod
+    spriteName: Meleenemy_lbod
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1db5941c99df68b48b81b89c67f6b538
+    layerID: 7
+    mosaicPosition: {x: 360, y: 4}
+  - name: Meleenemy_leg2
+    spriteName: Meleenemy_leg2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a6be11759e4533438d6f3975b23867c
+    layerID: 5
+    mosaicPosition: {x: 465, y: 4}
+  sharedRigPSDLayers: []
   generateGOHierarchy: 0
   textureAssetName: MeeleEnemy2 Texture
   prefabAssetName: MeeleEnemy2 Prefab
   spriteLibAssetName: MeeleEnemy2 Sprite Lib
+  skeletonAssetName: MeeleEnemy2 Skeleton
   secondarySpriteTextures: []
