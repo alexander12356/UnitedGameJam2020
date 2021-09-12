@@ -1,0 +1,68 @@
+name: Build Draft Release
+on:
+  push:
+    branches:
+      - master
+jobs:
+
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+          lfs: true
+
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library
+
+      - uses: game-ci/unity-builder@v2.0-alpha-10
+        env:
+          # TODO: положить лицензию в secrets
+          UNITY_LICENSE_FILE: ./licenses/Unity_v2019.x.ulf
+        with:
+          targetPlatform: StandaloneWindows64
+          unityVersion: 2019.3.11f1
+          buildsPath: Build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: Build
+
+  create-draft:
+    runs-on: ubuntu-latest
+    needs: build-app
+    steps:
+
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+          lfs: true
+
+      - uses: release-drafter/release-drafter@v5
+        id: release_drafter
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: Build
+          path: Build
+
+      - name: zipping builded files
+        run: |
+          ls -la
+          zip -r Build.zip Build
+
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release_drafter.outputs.upload_url }}
+          asset_path: Build.zip
+          asset_name: Build.zip
+          asset_content_type: application/zip
