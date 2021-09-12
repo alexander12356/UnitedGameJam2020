@@ -24,6 +24,7 @@ ScriptedImporter:
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
+    vTOnly: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -42,6 +43,9 @@ ScriptedImporter:
     textureType: 8
     textureShape: 1
     singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
     filterMode: 1
     aniso: 1
     mipBias: 0
@@ -102,10 +106,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_6
+      guid: 
       position: {x: 27.843506, y: 41.29785, z: 0}
       rotation: {x: 0, y: 0, z: 0.75054353, w: -0.66082114}
       length: 32.892284
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 9.164993, y: 0.0010070801}
@@ -425,10 +433,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_4
+      guid: 
       position: {x: 59.899918, y: 20.412262, z: 0}
       rotation: {x: 0, y: 0, z: 0.7205669, w: 0.6933855}
       length: 36.125202
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 42.377, y: 0.46899414}
@@ -845,10 +857,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_5
+      guid: 
       position: {x: 42.569504, y: 10.900726, z: 0}
       rotation: {x: 0, y: 0, z: 0.68081695, w: 0.73245364}
       length: 28.538372
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 4.1279984, y: 0.39401245}
@@ -1343,45 +1359,77 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_11
+      guid: 
       position: {x: 31.470272, y: -0.0000048215816, z: 0}
       rotation: {x: 0, y: 0, z: -0.7711242, w: 0.63668483}
       length: 66.215355
       parentId: 1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_10
+      guid: 
       position: {x: 79.372604, y: -0.0000013040985, z: 0}
       rotation: {x: 0, y: 0, z: 0.6409096, w: 0.7676164}
       length: 31.470266
       parentId: 2
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_9
+      guid: 
       position: {x: 38.738697, y: -0.0000062771824, z: 0}
       rotation: {x: 0, y: 0, z: -0.6125066, w: 0.7904655}
       length: 79.37259
       parentId: 3
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_8
+      guid: 
       position: {x: -7.8123946, y: 10.513248, z: 0}
       rotation: {x: 0, y: 0, z: -0.93708575, w: 0.3490993}
       length: 38.738712
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_1
+      guid: 
       position: {x: 122.18982, y: 163.93408, z: 0}
       rotation: {x: 0, y: 0, z: 0.67809147, w: 0.7349776}
       length: 129.54076
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_3
+      guid: 
       position: {x: 134.52953, y: -10.044564, z: 0}
       rotation: {x: 0, y: 0, z: 0.4067735, w: 0.91352904}
       length: 52.544277
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_2
+      guid: 
       position: {x: 129.54077, y: -0.000021500031, z: 0}
       rotation: {x: 0, y: 0, z: 0.76477486, w: 0.6442976}
       length: 115.70702
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_5
+      guid: 
       position: {x: 18.035475, y: -25.010859, z: 0}
       rotation: {x: 0, y: 0, z: 0.0037146425, w: 0.9999931}
       length: 28.538368
       parentId: 4
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 49.006, y: 0.9049988}
@@ -2224,10 +2272,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: bone_7
+      guid: 
       position: {x: 29.701355, y: 40.68628, z: 0}
       rotation: {x: 0, y: 0, z: -0.69864076, w: 0.7154727}
       length: 29.164736
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     spriteOutline: []
     vertices:
     - position: {x: 29.294998, y: 0.07299805}
@@ -2532,117 +2584,107 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -149, y: 322}
-  platformSettings: []
-  mosaicLayers: 1
-  documentPivot: {x: 0, y: 0}
-  documentAlignment: 0
-  importHiddenLayers: 0
-  importedTextureWidth: 256
-  importedTextureHeight: 512
-  documentSize: {x: 246, y: 358}
-  paperDollMode: 0
-  keepDupilcateSpriteName: 0
-  spriteCategoryList:
-    categories: []
-  textureActualWidth: 256
-  textureActualHeight: 512
-  spritePackingTag: 
-  resliceFromLayer: 0
-  characterMode: 1
-  mosaicPSDLayers: []
-  rigPSDLayers:
-  - name: Nelly_hand1
-    spriteName: Nelly_hand1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8df89d1739455194794f4d9277716be8
-    layerID: 56
-    mosaicPosition: {x: 191, y: 359}
-  - name: Nelly_Bulging_eyes
-    spriteName: Nelly_Bulging_eyes
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 43617b75920d5f146b81d1d0fa79f4ba
-    layerID: 49
-    mosaicPosition: {x: 4, y: 359}
-  - name: Nelly_mouth
-    spriteName: Nelly_mouth
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 0be888f2c45b9864e96b6e4a48f0c6c9
-    layerID: 50
-    mosaicPosition: {x: 109, y: 359}
-  - name: Nelly_bod
-    spriteName: Nelly_bod
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 9b1de34e829300944b1ba8625d17e75d
-    layerID: 48
-    mosaicPosition: {x: 4, y: 4}
-  - name: Nelly_hand2
-    spriteName: Nelly_hand2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 09c204d828306d648b28435c5ffd8a2a
-    layerID: 59
-    mosaicPosition: {x: 4, y: 444}
   characterData:
     bones:
     - name: bone_1
+      guid: 
       position: {x: 136.18982, y: 168.93408, z: 0}
       rotation: {x: 0, y: 0, z: 0.67809147, w: 0.7349776}
       length: 129.54077
       parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_2
+      guid: 
       position: {x: 129.54077, y: -0.000015435258, z: 0}
       rotation: {x: 0, y: 0, z: 0.76477486, w: 0.6442976}
       length: 115.707016
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_3
+      guid: 
       position: {x: 134.52953, y: -10.044559, z: 0}
       rotation: {x: 0, y: 0, z: 0.40677354, w: 0.91352904}
       length: 52.54427
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_4
+      guid: 
       position: {x: 65.06613, y: -29.57553, z: 0}
       rotation: {x: 0, y: 0, z: 0.059421793, w: 0.99823296}
       length: 36.125202
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_5
+      guid: 
       position: {x: 18.035479, y: -25.010853, z: 0}
       rotation: {x: 0, y: 0, z: 0.0037146297, w: 0.9999931}
       length: 28.538368
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_6
+      guid: 
       position: {x: -11.015462, y: 41.595455, z: 0}
       rotation: {x: 0, y: -0, z: 0.99972975, w: 0.023248443}
       length: 32.892284
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_7
+      guid: 
       position: {x: -2.4888186, y: -46.86324, z: 0}
       rotation: {x: 0, y: -0, z: -0.99864113, w: 0.05211407}
       length: 29.164738
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_8
+      guid: 
       position: {x: -7.812391, y: 10.513262, z: 0}
       rotation: {x: 0, y: -0, z: -0.93708575, w: 0.3490993}
       length: 38.73871
       parentId: 0
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_9
+      guid: 
       position: {x: 38.73871, y: 0.000011186979, z: 0}
       rotation: {x: 0, y: 0, z: -0.6125066, w: 0.79046553}
       length: 79.37258
       parentId: 7
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_10
+      guid: 
       position: {x: 79.37259, y: 0.000008435645, z: 0}
       rotation: {x: 0, y: 0, z: 0.64090955, w: 0.7676164}
       length: 31.470266
       parentId: 8
+      color:
+        serializedVersion: 2
+        rgba: 0
     - name: bone_11
+      guid: 
       position: {x: 31.470272, y: 0.0000052534874, z: 0}
       rotation: {x: 0, y: 0, z: -0.77112406, w: 0.63668495}
       length: 66.21535
       parentId: 9
+      color:
+        serializedVersion: 2
+        rgba: 0
     parts:
     - spritePosition:
         x: 66
@@ -2691,8 +2733,73 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  importedTextureWidth: 256
+  importedTextureHeight: 512
+  documentSize: {x: 246, y: 358}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 256
+  textureActualHeight: 512
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Nelly_hand1
+    spriteName: Nelly_hand1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8df89d1739455194794f4d9277716be8
+    layerID: 56
+    mosaicPosition: {x: 191, y: 359}
+  - name: Nelly_Bulging_eyes
+    spriteName: Nelly_Bulging_eyes
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 43617b75920d5f146b81d1d0fa79f4ba
+    layerID: 49
+    mosaicPosition: {x: 4, y: 359}
+  - name: Nelly_mouth
+    spriteName: Nelly_mouth
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0be888f2c45b9864e96b6e4a48f0c6c9
+    layerID: 50
+    mosaicPosition: {x: 109, y: 359}
+  - name: Nelly_bod
+    spriteName: Nelly_bod
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9b1de34e829300944b1ba8625d17e75d
+    layerID: 48
+    mosaicPosition: {x: 4, y: 4}
+  - name: Nelly_hand2
+    spriteName: Nelly_hand2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09c204d828306d648b28435c5ffd8a2a
+    layerID: 59
+    mosaicPosition: {x: 4, y: 444}
+  sharedRigPSDLayers: []
   generateGOHierarchy: 0
   textureAssetName: Nelligark Texture
   prefabAssetName: Nelligark Prefab
   spriteLibAssetName: Nelligark Sprite Lib
+  skeletonAssetName: Nelligark Skeleton
   secondarySpriteTextures: []
