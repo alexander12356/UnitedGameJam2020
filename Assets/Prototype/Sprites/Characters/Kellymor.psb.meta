@@ -5875,4 +5875,4 @@ ScriptedImporter:
   skeletonAssetName: Kellymor Skeleton
   secondarySpriteTextures:
   - name: _NormalMap
-    texture: {fileID: 2800000, guid: fadf1c42ab6cb8449bafccbcc140b203, type: 3}
+    texture: {fileID: 2800000, guid: 8b406f9115f849a4eab8328b5c7ade25, type: 3}
