@@ -59,4 +59,19 @@ MonoBehaviour:
     - m_Name: Handturn2
       m_Hash: -478031274
       m_Sprite: {fileID: 21300000, guid: 24bcd2344bfa0fd40806647c160aef37, type: 3}
+  - m_Name: KellySlash
+    m_Hash: 1953890382
+    m_CategoryList:
+    - m_Name: Slash1
+      m_Hash: 1322116684
+      m_Sprite: {fileID: 21300000, guid: 4e42575421374a84ca9277ab27ca4f66, type: 3}
+    - m_Name: Slash2
+      m_Hash: -674973706
+      m_Sprite: {fileID: 21300000, guid: 65864d82967bda1439bff9d677ac5eeb, type: 3}
+    - m_Name: Slash3
+      m_Hash: -1597798560
+      m_Sprite: {fileID: 21300000, guid: 4b7c39a8df10b2c449a045183a26ded2, type: 3}
+    - m_Name: Handturn2
+      m_Hash: -478031274
+      m_Sprite: {fileID: 21300000, guid: c9ae5e2db795fe84eb90388b1ec82bac, type: 3}
   m_ModificationHash: 0
